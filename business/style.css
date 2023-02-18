@@ -1,3 +1,7 @@
+.box1 {
+  font-size: 100px;
+}
+
 :root {
   --mainColor: #00c09d;
   --mainColor__op: #00c09da5;
