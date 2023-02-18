@@ -441,16 +441,17 @@ img {
   font-size: 1.8rem;
 }
 
+
+/* 宣言内容--------------------------------------- */
 .underline-Area {
   /* width:20%; */
   text-align: center;
-  font-size: 3rem;
+  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* 宣言内容--------------------------------------- */
 .declaration {
   display: grid;
   width: 100%;
@@ -458,6 +459,7 @@ img {
   /* height: 450px; */
   margin-top: 80px;
   overflow: hidden;
+  gap: 2%;
 
 }
 .d-img {
@@ -1096,7 +1098,7 @@ footer .down p {
   }
 }
 
-@media screen and (max-width: 1024px) { /*(~1280)-----*/
+@media screen and (max-width: 1024px) { /*(~1024)-----*/
   .offer_sub_container {
     display: grid;
     grid-template-columns: 230px 230px;
@@ -1120,6 +1122,18 @@ footer .down p {
 
 
 /* 宣言内容 ------------------------------------------------*/
+@media screen and (max-width: 1024px) { 
+  .underline-Area {
+    /* width:20%; */
+    text-align: center;
+    /* font-size: 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
 @media screen and (max-width: 1485px) { /*(~1485)-----*/
   .declaration-text ul {
     font-size: 1.8rem;
