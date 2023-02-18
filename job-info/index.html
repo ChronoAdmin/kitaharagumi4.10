@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/job-info/style.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script></script>
+    <title>job-info</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <main>
+        <nav id="colnav" class="close">
+          <div class="sidebar">
+            <div class="sidebar__top">
+              <div class="image-text">
+                <span class="image">
+                  <img src="/images/logo.png" alt="" />
+                </span>
+                <div class="text sidebar__text">
+                  <span class="name">Kitahara Company</span>
+                </div>
+              </div>
+              <div class="toggle"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="menubar">
+              <ul class="menu__links">
+                <li class="nav__link">
+                  <a href="/">
+                    <img src="/images/icons/home.png" alt="" class="icon" />
+                    <span class="text nav__text">Home</span>
+                  </a>
+                </li>
+                <li class="nav__link">
+                  <!-- <a href="">
+                    <img src="/images/icons/news.png" alt="" class="icon" />
+                    <span class="text nav__text">News</span>
+                  </a> -->
+                </li>
+                <li class="nav__link">
+                  <a href="/company/">
+                    <img
+                      src="/images/icons/enterprise.png"
+                      alt=""
+                      class="icon"
+                    />
+                    <span class="text nav__text">Company</span>
+                  </a>
+                </li>
+
+                <li class="nav__link">
+                  <a href="/business/">
+                    <img src="/images/icons/wrench.png" alt="" class="icon" />
+                    <span class="text nav__text">Bussines</span>
+                  </a>
+                </li>
+
+                <li class="nav__link">
+                  <a href="/job-info/">
+                    <img src="/images/icons/adoption.png" alt="" class="icon" />
+                    <span class="text nav__text">JobInfo</span>
+                  </a>
+                </li>
+                <li class="nav__link">
+                  <a href="/#contact">
+                    <img src="/images/icons/mail.png" alt="" class="icon" />
+                    <span class="text nav__text">Contact</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container">
+          <section id="menu">
+            <div class="header">
+              <div class="title">
+                <p>採用情報</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="/job-info/index.html#offer">採用情報</a>
+                  <i class="fa-solid fa-check" id="fa-right"></i>
+                </li>
+                <li>
+                  <a href="/job-info/index.html#voice">社員の声</a>
+                  <i class="fa-solid fa-check" id="fa-right"></i>
+                </li>
+                <li>
+                  <a href="/job-info/index.html#form">エントリーフォーム</a>
+                  <i class="fa-solid fa-check" id="fa-right"></i>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section id="offer">
+            <div class="inner">
+              <div class="secTitle">採用情報</div>
+              <!----------------------- 正社員 ------------------------->
+              <div class="offer__container wrapper" id="offer1">
+                <div class="table" id="table1">
+                  <div class="img">
+                    <img src="/images/job/genba.jpg" alt="" />
+                  </div>
+                  <p class="od-title c-marker-green js-markerScrollAnimation">
+                    土木現場従事者（正社員）
+                  </p>
+                  <div class="full-contents">
+                    <dl class="full-time">
+                      <dt>業務内容</dt>
+                      <dd>
+                        施工・安全管理業務、重機・車輌の運転（未経験者応募可！）
+                      </dd>
+                      <dt>勤務地</dt>
+                      <dd>長野県内の工事現場（南佐久郡、佐久市など）</dd>
+                      <dt>勤務時間</dt>
+                      <dd>
+                        8 : 00 〜 17 : 00（休憩：午前15分、昼食60分、午後15分）
+                      </dd>
+                      <dt>必要資格</dt>
+                      <dd>普通運転免許保有者、資格保有者優遇あり</dd>
+                      <dt>福利厚生</dt>
+                      <dd>
+                        健康保険、雇用保険、厚生年金、労災保険、退職金制度
+                      </dd>
+                      <dt>雇用形態</dt>
+                      <dd>フルタイム</dd>
+                      <dt>給与</dt>
+                      <dd>月収250,000円～</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <!----------------------- 事務員 ------------------------->
+              <div class="offer__container">
+                <div class="table">
+                  <div class="img">
+                    <img src="/images/job/zimu.jpg" alt="" />
+                  </div>
+                  <p class="od-title c-marker-pink js-markerScrollAnimation">
+                    事務員（正社員）
+                  </p>
+                  <div class="full-contents">
+                    <dl class="full-time">
+                      <dt>業務内容</dt>
+                      <dd>経理、現場管理補助、他（未経験者応募可！）</dd>
+                      <dt>勤務地</dt>
+                      <dd>本社勤務</dd>
+                      <dt>勤務時間</dt>
+                      <dd>
+                        8 : 00 〜 17 : 00（休憩：午前15分、昼食60分、午後15分）
+                      </dd>
+                      <dt>福利厚生</dt>
+                      <dd>
+                        健康保険、雇用保険、厚生年金、労災保険、退職金制度
+                      </dd>
+                      <dt>雇用形態</dt>
+                      <dd>フルタイム</dd>
+                      <dt>給与</dt>
+                      <dd>月収150,000円～</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <!----------------------- 現場アルバイト; ------------------------->
+              <div class="offer__container wrapper">
+                <div class="table">
+                  <div class="img">
+                    <img src="/images/job/baito.jpg" alt="" />
+                  </div>
+                  <p
+                    class="od-title c-marker-blue js-markerScrollAnimation"
+                  >
+                    土木現場従事者（アルバイト）
+                  </p>
+                  <div class="full-contents">
+                    <dl class="full-time">
+                      <dt>業務内容</dt>
+                      <dd>現場作業、軽作業（未経験者応募可！）</dd>
+                      <dt>勤務地</dt>
+                      <dd>長野県内の工事現場（南佐久郡、佐久市など）</dd>
+                      <dt>勤務時間</dt>
+                      <dd>平日8 : 00 〜 17 : 00　シフト制</dd>
+                      <dt>必要資格</dt>
+                      <dd>普通運転免許保有者、資格保有者優遇あり</dd>
+                      <dt>福利厚生</dt>
+                      <dd>労災保険、退職金制度</dd>
+                      <dt>雇用形態</dt>
+                      <dd>パートタイム</dd>
+                      <dt>給与</dt>
+                      <dd>時給1900円~　(実力により昇給。通勤交通費は別途。)</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div id="offer-sub">
+                <div class="secTitle">入社後のサポート</div>
+                <div class="offer_sub_container">
+                  <div class="card_box">
+                    <span></span>
+                    <p>
+                      年間休日数95日<br />
+                      ​基本週休二日制<br />
+                      （ゴールデンウイーク、お盆、年末年始は変則あり）<br />
+                      ​お盆休み、年末年始休み
+                    </p>
+                  </div>
+                  <div class="card_box">
+                    <span></span>
+                    <p>
+                      時間外勤務手当<br />
+                      特別資格手当<br />
+                      休日手当　他<br />
+                    </p>
+                  </div>
+                  <div class="card_box">
+                    <span></span>
+                    <p>
+                      年2回<br />
+                      （8月,12月）<br />
+                      ※正社員に限る<br />
+                    </p>
+                  </div>
+                  <div class="card_box">
+                    <span></span>
+                    <p>
+                      年1回<br />
+                      （4月）<br />
+                      ※正社員に限る<br />
+                    </p>
+                  </div>
+                </div>
+                <!-- <ul class="details__list">
+                  <li>
+                    <div class="listTitle">休日休暇</div>
+                    <div class="listTxt">
+                      <p>
+                        年間休日数95日<br />
+                        ​基本週休二日制<br />
+                        （ゴールデンウイーク、お盆、年末年始は変則あり）<br />
+                        ​お盆休み、年末年始休み
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listTitle">諸手当</div>
+                    <div class="listTxt">
+                      <p>
+                        時間外勤務手当<br />
+                        特別資格手当<br />
+                        休日手当　他<br />
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listTitle">賞与</div>
+                    <div class="listTxt">
+                      <p>
+                        年2回<br />
+                        （8月,12月）<br />
+                        ※正社員に限る<br />
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="listTitle">昇給</div>
+                    <div class="listTxt">
+                      <p>
+                        年1回<br />
+                        （4月）<br />
+                        ※正社員に限る<br />
+                      </p>
+                    </div>
+                  </li>
+                </ul> -->
+              </div>
+              <!-- 宣言内容 -->
+              <div class="declaration">
+                <div class="underline-Area">
+                  <div>
+                    <div class="bg_arrow"></div>
+                    <p>
+                      従業員の、仕事と子育ての両立を<br />支援するための取り組みとして
+                    </p>
+                    <p>
+                      <span class="c-marker-yellow js-markerScrollAnimation"
+                        >『社員の子育て応援宣言』</span
+                      >
+                      に登録しました。
+                    </p>
+                  </div>
+                </div>
+                <div class="dec_text">
+                  <img src="../images/job/宣言内容.jpg" alt="">
+                </div>
+                <!-- <div class="d-img">
+                  <img src="/images/job/kosodate.jpg" alt="" />
+                </div>
+                <div class="declaration-text">
+                  <p class="d-title">♢宣言内容♢</p>
+                  <ul>
+                    <li>
+                      <span class="yellow_color">1.</span> 子育てしやすいように、連続休日を設けた年間カレンダーを作成します。
+                    </li>
+                    <li>
+                      <span class="yellow_color">2.</span> 急な病気の時の看護や介護などの休みでも対応できる体制を整えるような勤務シフトを組むなど、職場環境づくりを進めます。
+                    </li>
+                    <li>
+                      <span class="yellow_color">3.</span> 子どもが生まれる男性社員が特別休暇を取得できるよう制度を拡充するほか、子育てのための年次有給休暇の取得を推進します。
+                    </li>
+                    <li>
+                      <span class="yellow_color">4.</span> 保育園・小学校の行事に参加できるよう、勤務シフトの配慮をします。
+                    </li>
+                    <li><span class="yellow_color">5.</span> 育児休業の取得を促進します。（男性社員も含む）</li>
+                  </ul>
+                </div> -->
+              </div>
+              <!-- 採用までの流れ -->
+              <div class="flows">
+                <div class="bg_arrow"></div>
+                <p>採用までの流れ</p>
+                <ul class="flow">
+                  <li>
+                    <span class="icon">STEP.01</span>
+                    <dl>
+                      <dt>ご応募</dt>
+                      <dd>エントリーフォームに入力のうえ、ご応募ください。</dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <span class="icon">STEP.02</span>
+                    <dl>
+                      <dt>書類選考</dt>
+                      <dd>
+                        書類選考を通過した方には、追ってご連絡いたします。
+                      </dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <span class="icon">STEP.03</span>
+                    <dl>
+                      <dt>面接</dt>
+                      <dd>人事または事業部責任者との面接を行います。</dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt><span class="icon">STEP.04</span>内定</dt>
+                      <dd>応募から内定までは2週間程度を想定しております。</dd>
+                    </dl>
+                  </li>
+                </ul>
+                <div class="button_line007">
+                  <a href="/job-info/#form">エントリーフォームはこちら</a>
+                </div>
+              </div>
+              <!-- <div class="adoption wrapper">
+                <p>採用までの流れ</p>
+                <div class="a-flow">
+                  <div class="flow1">エントリー</div>
+                  <div class="flow2">ご連絡<br />日程のご相談</div>
+                  <div class="flow3">面接</div>
+                  <div class="flow4">採用のご連絡</div>
+                  <div class="flow5">入社</div>
+                </div>
+                <div class="button_line007">
+                  <a href="/job-info/#form">エントリーフォームはこちら</a>
+                </div>
+              </div> -->
+            </div>
+          </section>
+          <section id="voice" class="inner">
+            <div class="secTitle">社員の声</div>
+            <div class="vc-hero wrapper">
+              <div class="hero-text">
+                <p>
+                  北原組で働くみなさんに、入社してからの仕事や今後について答えてもらいました。<br />
+                  「地域の未来を創る」をコンセプトにする弊社について少しでも伝わればと思います。
+                </p>
+                <p>
+                  今回は現場代表でＭ君、事務職代表でＴさんにインタビューしました。
+                </p>
+              </div>
+              <img src="/images/job/mkun.jpg" alt="" />
+            </div>
+            <!-- 社員インタビュー -->
+            <div class="vc-items wrapper">
+              <div class="vc-item">
+                <span class="c-marker-yellow js-markerScrollAnimation vc_name"
+                  >現場職のM君</span
+                >
+                <h2>・入社のきっかけ</h2>
+                <p>
+                  北原組への入社は現在の社長の長女との結婚で、この地で生活することとなり少しは経験のあった建設業だったのでお世話になることにしました。
+                </p>
+                <p>
+                  私は青森県出身で林業高校を卒業し、埼玉で介護職に就きましたが、給料も安く重労働で転職も考えているとき、縁があったのか今に至りました。
+                </p>
+                <h2>・現在の仕事</h2>
+                <p>
+                  現在は重機のオペレーター、ダンプの運転手、型枠大工、溶接工、土工など与えられた仕事は、それなりに熟しています。作業主任者の資格もいろいろ取得させていただき、現在は二級土木施工管理技士の資格取得にチャレンジしています。
+                </p>
+                <p>
+                  そんないろいろな資格取得の費用は全部会社が負担してくれるので助かります。従業員10人未満の小さな会社ですが、国有林内での治山や林道工事を得意としていて、私が林業高校で学んだことも役に立っていて嬉しいです。
+                </p>
+                <p>
+                  また、東京電力の協力会社になっていて水力発電に伴うメンテナンス事業をやっていて、私も今は草刈り業務の現場代理人を任せてもらっています。
+                </p>
+                <h2>・就職して良かったこと</h2>
+                <p>
+                  会社は、エコアクション21やISO9001及び45001を認証取得していて、働きやすい環境を常々求めていて、月に一回社員全員の会議があり、私も思ったことを自由に発言できる場を設けてくれています。
+                </p>
+                <p>
+                  そして、一番助かっているのは現在子ども二人を育てていますが、コロナや流行性の病気になってしまったときは親のどちらかが会社を休まなければいけませんが、突然であっても、みなさんで対応してくれます。
+                </p>
+                <p>
+                  もちろんこのようなことは私だけでなくほかの社員の方たちにも急用ができたときは、みんなで穴埋めするという体制をすぐに作るという少人数企業だからできる優しさがあります。
+                </p>
+                <h2>・最後に</h2>
+                <p>
+                  今、会社では従業員を募集していますが、私の希望は現在私が一番の若手（31歳）なので、年下の体力のある人に来てほしいです。
+                </p>
+              </div>
+              <div class="vc-item">
+                <span class="c-marker-yellow js-markerScrollAnimation"
+                  >事務職のTさん</span
+                >
+                <h2>・入社のきっかけ</h2>
+                <p>
+                  10年前、ハローワークの紹介で北原組の門を叩きました。今まで勤務していた職種とは違い、経理事務のほか現場書類の手伝いもあります。ハローワークの勧めでパソコン教室に通い、仕事ができるように必死に頑張りました。
+                </p>
+                <h2>・学んだこと</h2>
+                <p>
+                  入社して、あまりにも作業量が多いことに当初は不安も感じました。しかし、どんな仕事にもコツがあり、社長はじめ皆さんが要領を教えてくれました。
+                </p>
+                <p>
+                  「わからないことは恥ずかしがらずにすぐに聞くこと」「人の話を聞くときはメモを取ること」このことは今でも役に立っています。本当にみんなが家族のような会社です。今年は建設業経理事務士の資格にも挑戦しようと思います。
+                </p>
+                <h2>・最後に</h2>
+                <p>
+                  会社では、事業拡大の目標で事務職を募集しています。職場見学・体験も対応しますので、ご検討ください。
+                  もう一人入社していただければ、私の資格取得にも専念できます。お待ちしています。
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="form" class="">
+            <div class="inner" id="entry">
+              <div class="secTitle">エントリーフォーム</div>
+              <p class="lorem">
+                エントリーは「お電話」又は下記の「エントリーフォーム」でお気軽にお問い合わせ下さい。
+              </p>
+              <div class="tel">
+                <div class="telbox">
+                  <div class="box">
+                    <p class="left">お電話での応募</p>
+                    <div class="right">
+                      <p>0267-92-2064</p>
+                      <p>受付時間：平日8:00~17:00</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="img">
+                  <img src="/images/top/g0254 1.png" alt="" />
+                </div>
+              </div>
+              <div class="entryForm">
+                <form action="">
+                  <div class="row">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        id="name"
+                        name=""
+                        required
+                        class="input"
+                      />
+                      <label for="name" class="label"
+                        ><i class="fa-solid fa-user"></i> お名前
+                        <span>*</span></label
+                      >
+                    </div>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        id="number"
+                        name=""
+                        required
+                        class="input"
+                      />
+                      <label for="number" class="label"
+                        ><i class="fa-solid fa-phone"></i> お電話番号
+                        <span>*</span></label
+                      >
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      id="email"
+                      name=""
+                      class="input"
+                      required
+                    />
+                    <label for="email" class="label"
+                      ><i class="fa-solid fa-envelope"></i> メールアドレス
+                      <span>*</span></label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      id="details"
+                      name=""
+                      class="input"
+                      required
+                    />
+                    <label for="details" class="label"
+                      ><i class="fa-solid fa-file"></i> 希望職種
+                      <span>*</span></label
+                    >
+                    <p>例) 現場従事者(正社員)、事務員...</p>
+                  </div>
+                  <div class="input-group">
+                    <textarea name="" id="message" rows="8" required></textarea>
+                    <label for="message" class="label"
+                      ><i class="fa-solid fa-comments"></i> 備考
+                    </label>
+                  </div>
+                  <div class="check">
+                    <input type="checkbox" name="" id="check" required />
+                    <label for="check"
+                      ><a
+                        href="/プライバシーポリシー.pdf"
+                        class="privacy"
+                        target="_blank"
+                      >
+                        プライバシーポリシー</a
+                      >に同意する</label
+                    >
+                  </div>
+                  <button type="submit">
+                    <i class="fa-solid fa-paper-plane"></i> 確認
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-wrap">
+          <div class="up">
+            <a href="/#contact">お問い合わせ</a>
+            <a href="/job-info/#form">求人応募</a>
+          </div>
+          <div class="center">
+            <ul>
+              <li><a href="/">Top</a></li>
+              <li><a href="/company/">Company</a></li>
+              <li><a href="/business/">Business</a></li>
+              <li><a href="/job-info/">Job-Info</a></li>
+              <li><a href="/#sec4">Contact</a></li>
+            </ul>
+          </div>
+          <div class="down">
+            <img src="/images/logo.png" alt="" />
+            <p>株式会社北原組</p>
+          </div>
+          <p class="copy">&copy: 2022 kitaharagumi All Right Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

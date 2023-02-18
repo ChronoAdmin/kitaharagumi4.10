@@ -1,0 +1,96 @@
+:root {
+  --mainColor: #00c09d;
+  --mainColor__op: #00c09da5;
+}
+
+.header {
+  width: 94%;
+  margin: 0 auto;
+  /* background-color: bisque; */
+  padding: 30px 0;
+}
+
+
+
+
+#menu {
+    background: linear-gradient(
+      145deg,
+      rgba(229, 255, 242, 0.53) 40%,
+      rgba(133, 240, 188, 0.53)
+    );
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(98, 98, 98, 0.53);
+  }
+  
+  #menu .title p {
+    font-size: 4rem;
+    position: relative;
+  }
+  
+  #menu .title p::after {
+    position: absolute;
+    content: "Job Info";
+    bottom: -70px;
+    left: 0;
+    font-size: 7rem;
+    color: var(--mainColor);
+  }
+  
+  #menu ul {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #menu ul li {
+    position: relative;
+    width: 25%;
+  }
+  
+  #menu ul li a {
+    display: block;
+    color: black;
+    border-bottom: 1px solid #898484;
+    font-size: 3rem;
+    transition: all 0.3s;
+  }
+  
+  #fa-right {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    opacity: 0;
+    transition: all 0.3s;
+    font-size: 3rem;
+  }
+  
+  #menu ul li a:hover {
+    color: #00b380;
+  }
+  
+  #menu ul li a:hover + #fa-right {
+    opacity: 1;
+    color: #00b380;
+  }
+  
+  #fa-right {
+    animation: mochimochi 1s infinite;
+  }
+  @keyframes mochimochi {
+    0% {
+      transform: scale(1, 0.8);
+    }
+    20% {
+      transform: scale(0.8, 1.1);
+    }
+    90% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(1, 0.8);
+    }
+  }
+  

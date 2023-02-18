@@ -1,0 +1,104 @@
+
+#instagram {
+    position: absolute;
+    top: 150px;
+    right: 0px;
+    width: 80px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#instagram .nav_contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav_contents .toggle_btn,
+.nav_contents span a {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) ;
+
+}
+
+.nav_contents .toggle_btn {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 35px;
+    color: #0e2431;
+    z-index: 100;
+    cursor: pointer;
+    transform: rotate(-360deg);
+    transition: all .6s ease-in-out;
+    background-color: #00DBDE;
+    background-image: linear-gradient(43deg, #00DBDE 0%, #FC00FF 100%);
+    
+}
+
+.nav_contents span {
+    position: absolute;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+    /* display: block;
+    background-image: url(../images/bus/eco1.JPG);
+    background-size: cover;
+    background-position: center; */
+    
+}
+
+#instagram.open  .toggle_btn {
+    transform: rotate(0deg);
+
+}
+
+#instagram.open .nav_contents span  {
+    transform: rotate(calc(var(--i) * (360deg/11))) translateY(180px);
+    opacity: 1;
+    display: block;
+
+}
+
+.nav_contents span a {
+    text-decoration: none;
+    z-index: 0;
+    transition: .3s;
+    cursor: none;
+
+}
+
+.nav_contents span a img {
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) ;
+}
+
+
+
+.nav_contents span a:hover img {
+    transform: scale(1.2);
+}
+
+
+.nav_contents .insta_a_1:hover ~ .insta_a_3 a,
+.nav_contents .insta_a_1:hover ~ .insta_a_2 a{
+    opacity: 0.1;
+}
+.nav_contents .insta_a_2:hover ~ .insta_a_3 a,
+.nav_contents .insta_a_2:hover ~ .insta_a_1 a{
+    opacity: 0.1;
+}
+.nav_contents .insta_a_3:hover ~ .insta_a_1 a,
+.nav_contents .insta_a_3:hover ~ .insta_a_2 a{
+    opacity: 0.1;
+}
+

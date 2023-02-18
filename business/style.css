@@ -1,0 +1,1145 @@
+:root {
+  --mainColor: #00c09d;
+  --mainColor__op: #00c09da5;
+}
+
+.fw900 {
+  font-weight: bold;
+}
+
+/* vodmkp dsv mladmmldavm@o@ldmvkladmvmkaadmkvmadkmvlmvldmvmdslmvldsm */
+.contents_1 {
+  width: 90%;
+  max-height: 700px;
+  background-color: #000;
+  position: relative;
+}
+.contents_2 {
+  width: 90%;
+  max-height: 700px;
+  background-color: #000;
+  position: relative;
+  margin-left: auto;
+}
+.contents_1 img,
+.contents_2 img {
+  width: 100%;
+  max-height: 700px;
+  background-color: #000;
+  object-fit: cover;
+}
+
+.contents_1 .txt_1,
+.contents_2 .txt_1 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.txt_1 p {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.contents_1::after,
+.contents_2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0.9) 80%
+  );
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+  共通----------------------------------------------------------*/
+
+.inner {
+  width: 74%;
+  margin: 0 auto;
+  padding: 100px 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 94%;
+  margin: 0 auto;
+  /* background-color: bisque; */
+  padding: 30px 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 100px auto 100px auto;
+  /* background-color: rgba(153, 205, 50, 0.465); */
+}
+
+.secTitle {
+  font-size: 4.5rem;
+  position: relative;
+  border-top: solid 1px #898484;
+  padding-top: 0;
+}
+
+.secTitle::before {
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 3px;
+  background-color: var(--mainColor);
+  top: -2px;
+}
+
+.subTitle {
+  display: block;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  color: #00c09d;
+  /*文字色*/
+  padding: 0.3em 0;/*上下の余白*/
+  border-top: solid 3px #00c09d;/*上線*/
+  border-bottom: solid 3px #00c09d;/*下線*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.color--main {
+  color: var(--mainColor);
+  font-weight: 700;
+}
+.underline-Area {
+  width: 50%;
+  min-width: 200px;
+  height: auto;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #333;
+}
+
+.underline-Area p {
+  margin: 60px auto;
+}
+
+.underline-before {
+  background: linear-gradient(black, black) 0 100%/0 2px no-repeat;
+  /*左から、カラー（始点と終点それぞれ同じものを指定）、position / サイズ横縦 繰り返しの有無 */
+
+  transition: all 3s;
+  /*トランジションの設定。下線を引く動きをアニメーションにするのに必要 */
+
+  text-decoration: none;
+  /*テキストの装飾の設定 */
+}
+
+.underline-after {
+  background-size: 100% 2px;
+  /* 変化後のスタイル。横サイズを0から100%に変えることで指定の文字列に下線を引く */
+}
+
+/* 
+  companyメニュー-------------------------------------------------------- */
+
+#menu {
+  background: linear-gradient(
+    145deg,
+    rgba(229, 255, 242, 0.53) 40%,
+    rgba(133, 240, 188, 0.53)
+  );
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(98, 98, 98, 0.53);
+}
+
+#menu .title p {
+  font-size: 4rem;
+  position: relative;
+}
+
+#menu .title p::after {
+  position: absolute;
+  content: "Business";
+  bottom: -70px;
+  left: 0;
+  font-size: 7rem;
+  color: var(--mainColor);
+}
+
+#menu ul {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu ul li {
+  position: relative;
+  width: 25%;
+}
+
+#menu ul li a {
+  display: block;
+  color: black;
+  border-bottom: 1px solid #898484;
+  font-size: 3rem;
+  transition: all 0.3s;
+}
+
+#fa-right {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  opacity: 0;
+  transition: all 0.3s;
+  font-size: 3rem;
+}
+
+#menu ul li a:hover {
+  color: #00b380;
+}
+
+#menu ul li a:hover + #fa-right {
+  opacity: 1;
+  color: #00b380;
+}
+
+#fa-right {
+  animation: mochimochi 1s infinite;
+}
+@keyframes mochimochi {
+  0% {
+    transform: scale(1, 0.8);
+  }
+  20% {
+    transform: scale(0.8, 1.1);
+  }
+  90% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 0.8);
+  }
+}
+
+/* 
+  施工事例-------------------------------------------- */
+
+#works {
+  width: 100%;
+  margin: 100px 0;
+}
+
+#works .secTitle {
+  width: 74%;
+  margin: 0 auto;
+}
+
+#works .secTitle::after {
+  position: absolute;
+  content: "Example";
+  bottom: -25px;
+  left: 25px;
+  font-size: 2.5rem;
+  color: var(--mainColor);
+}
+
+.null {
+  margin: 50px 0;
+}
+
+/* 施工事例----------------------------- */
+
+/* 道路工事---------------- */
+.box1 {
+  width: 80%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+.box1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0.9) 80%
+  ); */
+  width: 100%;
+  height: 100%;
+  z-index: 49;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7 {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  background: center center no-repeat;
+  background-size: cover;
+  animation: anime 30s 0s infinite;
+  z-index: 0;
+  opacity: 0;
+}
+/* 画像の指定  */
+.box1 .image1 {
+  background-image: url(/images/bus/工事/道路・河川/道路河川1.png);
+}
+.box1 .image2 {
+  background-image: url(/images/bus/工事/道路・河川/道路河川2.png);
+  animation-delay: 5s;
+}
+.box1 .image3 {
+  background-image: url(/images/bus/工事/道路・河川/道路河川3.png);
+  animation-delay: 10s;
+}
+.box1 .image4 {
+  background-image: url(/images/bus/工事/道路・河川/道路河川4.png);
+  animation-delay: 15s;
+}
+.box1 .image5 {
+  background-image: url(/images/bus/工事/道路・河川/道路河川5.png);
+  animation-delay: 20s;
+}
+.box1 .image6 {
+  background-image: url(/images/bus/工事/道路・河川/道路河川6.png);
+  animation-delay: 25s;
+}
+.box1 .image7 {
+  background-image: url(/images/bus/工事/道路・河川/道路河川7.png);
+  animation-delay: 30s;
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    z-index: 9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* .txt_1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  font-size: 2.4rem;
+} */
+
+/* 治山林道---------------- */
+.box2 {
+  width: 80%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+}
+.box2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0.9) 80%
+  ); */
+  width: 100%;
+  height: 100%;
+  z-index: 49;
+}
+
+/* 画像の指定  */
+.box2 .image1 {
+  background-image: url(/images/bus/工事/治山・林道/治山林道1.png);
+}
+.box2 .image2 {
+  background-image: url(/images/bus/工事/治山・林道/治山林道2.png);
+  animation-delay: 5s;
+}
+.box2 .image3 {
+  background-image: url(/images/bus/工事/治山・林道/治山林道3.png);
+  animation-delay: 10s;
+}
+.box2 .image4 {
+  background-image: url(/images/bus/工事/治山・林道/治山林道4.png);
+  animation-delay: 15s;
+}
+.box2 .image5 {
+  background-image: url(/images/bus/工事/治山・林道/治山林道5.png);
+  animation-delay: 20s;
+}
+.box2 .image6 {
+  background-image: url(/images/bus/工事/治山・林道/治山林道6.png);
+  animation-delay: 25s;
+}
+.box2 .image7 {
+  background-image: url(/images/bus/工事/治山・林道/治山林道7.png);
+  animation-delay: 30s;
+}
+
+/* その他---------------- */
+.box3 {
+  width: 80%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+.box3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.6) 70%,
+    rgba(0, 0, 0, 0.9) 80%
+  ); */
+  width: 100%;
+  height: 100%;
+  z-index: 49;
+}
+
+/* 画像の指定  */
+.box3 .image1 {
+  background-image: url(/images/bus/工事/民間その他/民間その他1.png);
+}
+.box3 .image2 {
+  background-image: url(/images/bus/工事/民間その他/民間その他2.png);
+  animation-delay: 5s;
+}
+.box3 .image3 {
+  background-image: url(/images/bus/工事/民間その他/民間その他3.png);
+  animation-delay: 10s;
+}
+.box3 .image4 {
+  background-image: url(/images/bus/工事/民間その他/民間その他4.png);
+  animation-delay: 15s;
+}
+.box3 .image5 {
+  background-image: url(/images/bus/工事/民間その他/民間その他1.png);
+  animation-delay: 20s;
+}
+.box3 .image6 {
+  background-image: url(/images/bus/工事/民間その他/民間その他3.png);
+  animation-delay: 25s;
+}
+.box3 .image7 {
+  background-image: url(/images/bus/工事/民間その他/民間その他4.png);
+  animation-delay: 30s;
+}
+
+/*
+登録・認可---------------------------------------------------  */
+
+#register .secTitle::after {
+  position: absolute;
+  content: "License";
+  bottom: -25px;
+  left: 45px;
+  font-size: 2.5rem;
+  color: var(--mainColor);
+}
+
+/* #register .subTitle {
+  margin-left: 2.5%;
+} */
+
+.r-contents {
+  margin-top: 100px;
+}
+
+.register_inner {
+  width: 94%;
+  margin: 0 auto;
+  padding: 100px 0 0 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+/* ISO---------------------------- */
+
+.iso-wrapper {
+  /* height: 300px; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 95%;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+.iso-text {
+  width: 50%;
+  overflow: hidden;
+}
+
+.iso-text p {
+  font-size: 2.4rem;
+  padding-right: 15%;
+}
+.iso-wrapper .img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.iso-wrapper .img img {
+  /* min-width: 150px;
+  max-width: 410px;
+  max-height: 317px;
+  min-height: 150px; */
+  width: 50%;
+  height: auto;
+  
+}
+
+/* SDGs---------------------------- */
+
+.sdgs-wrapper {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+
+.sd-contents {
+  /* display: flex; */
+  justify-content: space-between;
+  height: auto;
+}
+/* img-link */
+.sd-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sd-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.hover-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.hover-text .text1 {
+  font-size: 22px;
+  padding: 0 20px 10px;
+}
+
+.sd-img:hover .hover-text {
+  opacity: 1;
+  padding-top: 10px;
+}
+
+
+.sd-under {
+  display: flex;
+}
+
+.sd-text {
+  width: 80%;
+  padding: 30px;
+  font-size: 2.4rem;
+  overflow: hidden;
+  height: auto;
+  margin: 0 auto;
+}
+.sd-text p {
+  margin-bottom: 30px;
+}
+
+
+/* エコアクション------------------- */
+.eco_inner {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.eco-title p {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+.eco-report {
+  /* height: 300px; */
+  /* display: flex; */
+  justify-content: center;
+  margin: 20px 5%;
+}
+.eco-left {
+  width: 100%;
+  /* height: 300px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.eco1 {
+  width: 50%;
+  height: auto;
+}
+
+.eco2 {
+  width: 50%;
+  height: 100%;
+}
+
+.eco-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.eco-text {
+  width: 80%;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+.eco-text p {
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+}
+.eco-text p:nth-child(2) {
+  margin-bottom: 50px;
+}
+.eco-btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-style: 2rem;
+  line-height: 50px;
+  background-color: #898484;
+}
+
+/* LINE007(ecobtn)---------------------- */
+.button_line007 a {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 10px 25px;
+  color: #30a47b;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  background: rgb(224, 224, 224);
+}
+.button_line007 a:hover {
+  background: #ebfefa;
+  color: #6bffb8;
+}
+.button_line007 a:before,
+.button_line007 a:after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.button_line007 a:before {
+  top: 0;
+  left: 0;
+}
+.button_line007 a:after {
+  bottom: 0;
+  right: 0;
+}
+.button_line007 a:hover:before,
+.button_line007 a:hover:after {
+  width: 100%;
+  height: 100%;
+}
+.button_line007 a:hover:before {
+  border-top-color: #6bffb8;
+  border-right-color: #6bffb8;
+  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+.button_line007 a:hover:after {
+  border-bottom-color: #6bffb8;
+  border-left-color: #6bffb8;
+  transition: border-color 0s ease-out 0.2s, width 0.15s ease-out 0.2s,
+    height 0.15s ease-out 0.3s;
+}
+.more {
+  color: #00c06d !important;
+  font-size: 2.5rem;
+}
+
+/* エコ画像 */
+
+.eco-imgText p {
+  width: 100%;
+  text-align: left;
+  margin: 50px 0;
+  padding-top: 50px;
+  font-size: 2rem;
+}
+/* 
+-------------------script-------------------
+*/
+.swiper {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+.swiper::before {
+  content: "";
+  position: absolute;
+  top: 550px;
+  left: 0;
+}
+
+.swiper2 {
+  display: none;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*
+
+取り組み-----------------------------------------------------------------------------------
+*/
+#work-on .secTitle::after {
+  position: absolute;
+  content: "Work-on";
+  bottom: -25px;
+  left: 25px;
+  font-size: 2.5rem;
+  color: var(--mainColor);
+}
+/* 自販機-------------------------------------- */
+
+.vending-machine {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+.vm-text {
+  width: 100%;
+  padding: 8px 19px;
+  margin: 8px 0;
+  color: #2c2c2f;
+  background: #cde4ff;
+  border-top: solid 12px #31AFAB;
+  border-bottom: solid 12px #31AFAB;
+}
+/* .vm-img {
+  width: 500px;
+  height: 400px;
+} */
+.vm-img img {
+  width: 100%;
+  height: 100%;
+}
+.vm-text p {
+  padding: 4%;
+  font-size: 2.4rem;
+}
+/* 安全衛生----------------------------------------------------------------- */
+.health {
+  margin-top: 50px;
+  height: auto;
+  margin-bottom: 80px;
+}
+.health p {
+  padding: 4%;
+  font-size: 2.4rem;
+}
+
+.health-items {
+  /* display: flex;
+  flex-wrap: wrap; */
+  margin-top: 50px;
+  height: 100%;
+}
+
+.health-item1,.health-item2 {
+  display: flex;
+}
+
+
+.health-items img {
+  width: 50%;
+  height: auto;
+}
+.health-items p {
+  width: 50%;
+  padding: 10% 10%;
+  font-size: 24px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+
+
+/* フッター------------------------------------------------------- */
+footer {
+	background: #101010;
+	padding: 86px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+footer .footer-wrap {
+  width: 100%;
+  padding: 90px 0 0 0;
+}
+
+footer .up {
+  display: flex;
+  justify-content: center;
+}
+
+footer .up a{
+  margin: 0 30px;
+  font-size: 1.5rem;
+}
+
+footer .center {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+footer .center ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+footer .center ul li {
+  border-right: 1px solid #fff;
+  padding: 15px;
+  width: 20%;
+  font-size: 1.5rem;
+}
+
+footer .center ul li:last-child{
+  border-right: none;
+}
+
+
+footer .down {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .down p {
+  margin-left: 15px;
+  font-size: 4rem;
+  color: #fff;
+  font-family: "HG行書体", monospace;
+
+}
+
+.copy {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+
+/* レスポンシブ -----------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {/*  (~1280px)-------*/
+  .inner {
+    width: 94%;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+}
+
+/* サブタイトル */
+/* 
+@media screen and (max-width: 990px) {
+  .subTitle {
+
+    display: inline-block;
+    background: none;
+    border: none;
+
+    position: relative;
+    padding: 0.25em 1em;
+    border-top: solid 2px rgba(98, 98, 98, 0.53);
+    border-bottom: solid 2px rgba(98, 98, 98, 0.53);
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+  .subTitle:before, .subTitle:after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    width: 2px;
+    height: -webkit-calc(100% + 14px);
+    height: calc(100% + 14px);
+    background-color: rgba(98, 98, 98, 0.53);
+  }
+  .subTitle:before {
+    left: 7px;
+  }
+  .subTitle:after {
+    right: 7px;
+  }
+} */
+
+
+/* メニュー -----------------------------------------------------------*/
+/* タブレット-------------------- */
+@media screen and (max-width: 1024px) {
+  #menu .title p {
+    font-size: 3rem;
+  }
+  #menu .title p::after {
+    font-size: 6rem;
+  }
+  #menu ul li a {
+    font-size: 2.5rem;
+  }
+}
+
+/* 施工事例 -----------------------------------------------------------*/
+@media screen and (max-width: 1380px) {
+  .box1,
+  .box2,
+  .box3 {
+    height: 400px;
+  }
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6,
+  .image7 {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .box1,
+  .box2,
+  .box3 {
+    height: 300px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6,
+  .image7 {
+    height: 300px;
+  }
+}
+
+
+/* 登録認可 -----------------------------------------------------------*/
+
+/* ISO -----------------------------------------------------------*/
+@media screen and (max-width: 1485px) {
+  .iso-text p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .iso-wrapper {
+    display: block;
+  }
+
+  .iso-text {
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .iso-text p {
+    padding-right: 0;
+    font-size: 1.8rem;
+  }
+
+
+  .iso-wrapper .img {
+    width: auto;
+    /* display: block; */
+    height: auto;
+  }
+}
+
+  /* SDGs -------------------------------------------------------------*/
+@media screen and (max-width: 1485px) {
+  .sd-text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sd-contents {
+    display: block;
+    height: auto;
+  }
+
+  .sd-img {
+    width: 100%;
+  }
+
+  .sd-text {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+}
+  /* eco -----------------------------------------------------------*/
+  .eco1,.eco2 {
+    width: 50%;
+  }
+  .eco-text {
+    width: 100%;
+  }
+  .eco-text p {
+    font-size: 2rem;
+  }
+}
+
+
+/* 取り組み -------------------------------------------------------------------------*/
+
+/* 安全衛生 -----------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+  .health {
+    height: 100%;
+  }
+
+  .health .text1, .text2 {
+    font-size: 2rem;
+    width: 53%;
+  }
+
+  .health-items {
+    height: 100%;
+  }
+
+  .health-item1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .health-item1 .text1 {
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    left: 47%;
+  }
+
+  .health-item2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transform: scale(-1, 1);
+  }
+
+  .health-item2 img {
+    transform: scale(-1, 1);
+  }
+  .health-item2 .text2 {
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    left: 47%;
+    transform: scale(-1, 1);
+  }
+
+  .health-items p {
+    background-color: #898484 ;
+    padding: 0;
+    font-size: 2rem;
+  }
+}
+
