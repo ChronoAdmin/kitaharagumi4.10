@@ -1051,8 +1051,6 @@ footer .down p {
   }
 }
 
-
-
 /* 採用情報 ------------------------------------------------*/
 @media screen and (max-width: 1024px) {
   .table {
@@ -1137,7 +1135,6 @@ footer .down p {
   }
 }
 
-
 /* 宣言内容 ------------------------------------------------*/
 @media screen and (max-width: 1024px) {
   .underline-Area {
@@ -1159,9 +1156,8 @@ footer .down p {
   }
 }
 
-
 /* フロー ------------------------------------------------*/
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
   .flows {
     margin: 0 auto 50px auto;
   }
@@ -1169,7 +1165,6 @@ footer .down p {
     grid-template-columns: 1fr;
   }
 }
-
 
 /* 社員の声 ------------------------------------------------*/
 @media screen and (max-width: 1024px) {
@@ -1203,9 +1198,8 @@ footer .down p {
   }
 }
 
-
 /* エントリーフォーム ------------------------------------------------*/
-@media screen and (max-width: 599px) { 
+@media screen and (max-width: 599px) {
   .entryForm form {
     padding: 50px 25px;
   }
@@ -1223,12 +1217,12 @@ footer .down p {
     font-size: 12px;
   }
   .entryForm input:focus ~ .label,
-.entryForm input:valid ~ .label,
-textarea:valid ~ .label,
-textarea:focus ~ .label {
-  font-size: 12px;
-}
-.check {
-  font-size: 14px;
-}
+  .entryForm input:valid ~ .label,
+  textarea:valid ~ .label,
+  textarea:focus ~ .label {
+    font-size: 12px;
+  }
+  .check {
+    font-size: 14px;
+  }
 }
