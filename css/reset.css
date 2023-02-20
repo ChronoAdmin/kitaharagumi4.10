@@ -194,6 +194,7 @@ main {
   background-attachment: fixed;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -332,3 +333,53 @@ main {
 @media screen and (max-width: 599px) {
   
 }
+
+
+
+
+/* エントリーフォーム */
+@media screen and (max-width: 1427px) {/* (~1427px) ------------*/
+  .telbox .left {
+    font-size: 3rem;
+  }
+  .telbox .right {
+    padding: 25px;
+    background-color: white;
+    width: 50%;
+  }
+  .telbox .right p:nth-child(1) {
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: 1px solid #000;
+  }
+  .telbox .right p:nth-child(2) {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+  @media screen and (max-width: 1427px) {/* (~1427px) ------------*/
+    .tel .img {
+      display: none;
+    }
+    .telbox {
+      width: 100%;
+    }
+    .telbox .left {
+      font-size: 3rem;
+    }
+  }
+
+@media screen and (max-width: 599px) {
+  .telbox .box {
+    display: block;
+  }
+  .box .left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .box .right {
+    width: 100%;
+  }
+ }

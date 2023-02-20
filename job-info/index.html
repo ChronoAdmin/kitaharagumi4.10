@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/job-info/style.css" />
     <link rel="stylesheet" href="/css/reset.css" />
+    <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <!-- Swiper -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script></script>
     <title>job-info</title>
   </head>
   <body>
     <div class="wrap">
       <main>
-        <nav id="colnav" class="close">
+
+        <nav id="colnav" class="close"> <!-- sidebar -->
           <div class="sidebar">
-            <div class="sidebar__top">
+            <div class="sidebar__top"> <!-- sidebar TOP logo & text -->
               <div class="image-text">
                 <span class="image">
                   <img src="/images/logo.png" alt="" />
@@ -32,21 +35,15 @@
                   <span class="name">Kitahara Company</span>
                 </div>
               </div>
-              <div class="toggle"><i class="fa-solid fa-angle-right"></i></div>
-            </div>
-            <div class="menubar">
+              <div class="toggle"><i class="fa-solid fa-angle-right"></i></div> <!-- sidebar 開閉ボタン -->
+            </div> <!-- //sidebar TOP logo & text -->
+            <div class="menubar"> <!-- sidebar 中身 -->
               <ul class="menu__links">
                 <li class="nav__link">
                   <a href="/">
                     <img src="/images/icons/home.png" alt="" class="icon" />
                     <span class="text nav__text">Home</span>
                   </a>
-                </li>
-                <li class="nav__link">
-                  <!-- <a href="">
-                    <img src="/images/icons/news.png" alt="" class="icon" />
-                    <span class="text nav__text">News</span>
-                  </a> -->
                 </li>
                 <li class="nav__link">
                   <a href="/company/">
@@ -58,14 +55,12 @@
                     <span class="text nav__text">Company</span>
                   </a>
                 </li>
-
                 <li class="nav__link">
                   <a href="/business/">
                     <img src="/images/icons/wrench.png" alt="" class="icon" />
                     <span class="text nav__text">Bussines</span>
                   </a>
                 </li>
-
                 <li class="nav__link">
                   <a href="/job-info/">
                     <img src="/images/icons/adoption.png" alt="" class="icon" />
@@ -79,11 +74,12 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> <!-- //sidebar 中身 -->
           </div>
-        </nav>
-        <div class="container">
-          <section id="menu">
+        </nav> <!-- //sidebar -->
+
+        <div class="container"> <!-- Container -->
+          <section id="menu"> <!-- header menu -->
             <div class="header">
               <div class="title">
                 <p>採用情報</p>
@@ -103,8 +99,9 @@
                 </li>
               </ul>
             </div>
-          </section>
-          <section id="offer">
+          </section> <!-- //header menu -->
+
+          <section id="offer"> <!-- 採用情報 -->
             <div class="inner">
               <div class="secTitle">採用情報</div>
               <!----------------------- 正社員 ------------------------->
@@ -327,6 +324,22 @@
                 </div> -->
               </div>
               <!-- 採用までの流れ -->
+
+              <!-- <div class="adoption wrapper">
+                <p>採用までの流れ</p>
+                <div class="a-flow">
+                  <div class="flow1">エントリー</div>
+                  <div class="flow2">ご連絡<br />日程のご相談</div>
+                  <div class="flow3">面接</div>
+                  <div class="flow4">採用のご連絡</div>
+                  <div class="flow5">入社</div>
+                </div>
+                <div class="button_line007">
+                  <a href="/job-info/#form">エントリーフォームはこちら</a>
+                </div>
+              </div> -->
+            </div>
+            <div class="flow_bg">
               <div class="flows">
                 <div class="bg_arrow"></div>
                 <p>採用までの流れ</p>
@@ -368,19 +381,6 @@
                   <a href="/job-info/#form">エントリーフォームはこちら</a>
                 </div>
               </div>
-              <!-- <div class="adoption wrapper">
-                <p>採用までの流れ</p>
-                <div class="a-flow">
-                  <div class="flow1">エントリー</div>
-                  <div class="flow2">ご連絡<br />日程のご相談</div>
-                  <div class="flow3">面接</div>
-                  <div class="flow4">採用のご連絡</div>
-                  <div class="flow5">入社</div>
-                </div>
-                <div class="button_line007">
-                  <a href="/job-info/#form">エントリーフォームはこちら</a>
-                </div>
-              </div> -->
             </div>
           </section>
           <section id="voice" class="inner">
@@ -469,7 +469,7 @@
                   <div class="box">
                     <p class="left">お電話での応募</p>
                     <div class="right">
-                      <p>0267-92-2064</p>
+                      <a href="tel:0267922064">0267-92-2064</a>
                       <p>受付時間：平日8:00~17:00</p>
                     </div>
                   </div>
