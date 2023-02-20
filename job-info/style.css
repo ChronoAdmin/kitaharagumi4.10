@@ -34,7 +34,7 @@ img {
 
 .secTitle {
     border-top: solid 1px #898484;
-    font-size: 4.5rem;
+    font-size: calc(40px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
     padding-top: 0;
     position: relative;
 }
@@ -471,10 +471,14 @@ img {
     width: 100%;
 }
 .dec_text {
-    height: 500px;
+    height: auto;
+    width: 100%;
+    background-color: red;
     margin: 0 auto;
 }
 .dec_text img {
+    width: 100%;
+    height: 100%;
     cursor: default;
     margin: 0 auto;
     object-fit: cover;
@@ -798,10 +802,12 @@ SECTION04-----------------------------------------------------------------------
     padding: 25px;
     width: 50%;
 }
-.telbox .right p:nth-child(1) {
+.telbox .right a {
+  display: block;
     border-bottom: 1px solid #000000;
     font-size: 4rem;
     text-align: center;
+    color: #008afc;
 }
 .telbox .right p:nth-child(2) {
     font-size: 2rem;
@@ -1039,7 +1045,7 @@ footer .down p {
 /* レスポンシブ -----------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1024px) {
     .inner {
-        padding: 50px 0;
+        padding: 25px 0;
         width: 94%;
     }
 }
@@ -1077,6 +1083,7 @@ footer .down p {
     .offer_sub_container {
         display: block;
         width: 100%;
+        margin: 50px auto 0 auto;
     }
     .card_box {
         height: 150px;
@@ -1105,6 +1112,31 @@ footer .down p {
         width: 100%;
     }
 }
+@media screen and (max-width: 599px) {
+  .od-title {
+    font-size: 2rem;
+  }
+  .offer__container {
+    margin-top: 30px;
+
+  }
+  .offer__container .img {
+    height: 150px;
+}
+.full-time {
+  align-items: stretch;
+  border: 1px solid #cccccc;
+  border-bottom: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  height: auto;
+  width: 100%;
+}
+#offer-sub {
+  margin-top: 50px;
+}
+ }
 
 
 
@@ -1116,6 +1148,10 @@ footer .down p {
         justify-content: center;
         text-align: center;
     }
+    .flows {
+      margin: 0 auto 50px auto;
+
+    }
     .flow {
         grid-template-columns: 1fr;
     }
@@ -1126,25 +1162,13 @@ footer .down p {
         display: grid;
         gap: 2%;
         grid-template-columns: 1fr;
-        margin-top: 80px;
+        margin-top: 0px;
         overflow: hidden;
         width: 100%;
     }
 }
 
-@media screen and (max-width: 1485px) {
-    /*(~1485)-----*/
-    .declaration-text ul {
-        font-size: 1.8rem;
-    }
-}
 
-@media screen and (max-width: 1331px) {
-    /*(~1331)-----*/
-    .declaration-text ul {
-        font-size: 1.7rem;
-    }
-}
 
 
 
