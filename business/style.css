@@ -65,7 +65,7 @@
 .inner {
   width: 74%;
   margin: 0 auto;
-  padding: 100px 0;
+  /* padding: 100px 0; */
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -77,18 +77,18 @@
   padding: 30px 0;
 }
 
-.wrapper {
+/* .wrapper {
   width: 90%;
   margin: 100px auto 100px auto;
   background-color: rgba(153, 205, 50, 0.465);
-}
+} */
 
 .secTitle {
   font-size: calc(36px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
   position: relative;
   border-top: solid 1px #898484;
   padding-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .secTitle::before {
@@ -119,18 +119,17 @@
   color: var(--mainColor);
   font-weight: 700;
 }
-.underline-Area {
+/* .underline-Area {
   width: 50%;
   min-width: 200px;
   height: auto;
-  margin: 0;
   padding: 20px;
   border: 1px solid #333;
 }
 
 .underline-Area p {
   margin: 60px auto;
-}
+} */
 
 .underline-before {
   background: linear-gradient(black, black) 0 100%/0 2px no-repeat;
@@ -477,9 +476,9 @@
   margin-left: 2.5%;
 } */
 
-.r-contents {
+/* .r-contents {
   margin-top: 100px;
-}
+} */
 
 .register_inner {
   width: 94%;
@@ -586,7 +585,6 @@
 }
 .sd-text p {
   font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
-  margin-bottom: 30px;
 }
 
 /* エコアクション------------------- */
@@ -594,6 +592,7 @@
   width: 95%;
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 80px;
 }
 
 span {
@@ -654,7 +653,7 @@ span {
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
-  font-style: 2rem;
+  font-size: calc(24px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
   line-height: 50px;
   background-color: #898484;
 }
@@ -712,7 +711,7 @@ span {
 }
 .more {
   color: #00c06d !important;
-  font-size: 2.5rem;
+  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
 }
 
 /* エコ画像 */
@@ -782,6 +781,10 @@ span {
   font-size: 2.5rem;
   color: var(--mainColor);
 }
+
+#work-on {
+  margin-bottom: 100px;
+}
 /* 自販機-------------------------------------- */
 
 .vending-machine {
@@ -825,26 +828,26 @@ span {
   /* display: flex;
   flex-wrap: wrap; */
   margin-top: 50px;
-  height: 100%;
 }
 
 .health-item1,
 .health-item2 {
   display: flex;
+  align-items: center;
 }
 
 .health-items img {
   width: 50%;
-  height: auto;
+  height: 100%;
 }
 .health-items p {
   width: 50%;
-  padding: 10% 10%;
+  padding: 5%;
   font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
 }
-.mt-20 {
+/* .mt-20 {
   margin-top: 20px;
-}
+} */
 
 /* フッター------------------------------------------------------- */
 footer {
@@ -924,7 +927,6 @@ footer .down p {
   .inner {
     width: 94%;
     margin: 0 auto;
-    padding: 100px 0;
   }
 }
 
@@ -1085,14 +1087,13 @@ footer .down p {
 /* 取り組み -------------------------------------------------------------------------*/
 
 /* 安全衛生 -----------------------------------------------------------*/
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .health {
     height: 100%;
   }
 
   .health .text1,
   .text2 {
-    /* font-size: 2rem; */
     width: 53%;
   }
 
@@ -1135,4 +1136,4 @@ footer .down p {
     background-color: #898484;
     padding: 0;
   }
-}
+}  */
