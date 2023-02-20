@@ -332,3 +332,40 @@ main {
 @media screen and (max-width: 599px) {
   
 }
+
+
+
+
+
+@media screen and (max-width: 1427px) {/* (~1280px) ------------*/
+  .telbox .left {
+    font-size: 3rem;
+  }
+  .telbox .right {
+    padding: 25px;
+    background-color: white;
+    width: 50%;
+  }
+  .telbox .right p:nth-child(1) {
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: 1px solid #000;
+  }
+  .telbox .right p:nth-child(2) {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+  @media screen and (max-width: 1427px) {/* (~1080px) ------------*/
+    .tel .img {
+      display: none;
+    }
+    .telbox {
+      width: 100%;
+    }
+    .telbox .left {
+      font-size: 3rem;
+    }
+  }
+
