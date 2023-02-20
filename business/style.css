@@ -1,7 +1,3 @@
-.box1 {
-  font-size: 100px;
-}
-
 :root {
   --mainColor: #00c09d;
   --mainColor__op: #00c09da5;
@@ -9,10 +5,11 @@
 
 .fw900 {
   font-weight: bold;
+  font-size: calc(22px + (40 - 30) * ((100vw - 1025px) / (1920 - 1025)));
 }
 
 /* vodmkp dsv mladmmldavm@o@ldmvkladmvmkaadmkvmadkmvlmvldmvmdslmvldsm */
-.contents_1 {
+/* .contents_1 {
   width: 90%;
   max-height: 700px;
   background-color: #000;
@@ -60,8 +57,7 @@
     rgba(0, 0, 0, 0.9) 80%
   );
   width: 100%;
-  height: 100%;
-}
+  height: 100%; */
 
 /* 
   共通----------------------------------------------------------*/
@@ -84,14 +80,15 @@
 .wrapper {
   width: 90%;
   margin: 100px auto 100px auto;
-  /* background-color: rgba(153, 205, 50, 0.465); */
+  background-color: rgba(153, 205, 50, 0.465);
 }
 
 .secTitle {
-  font-size: 4.5rem;
+  font-size: calc(36px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
   position: relative;
   border-top: solid 1px #898484;
   padding-top: 0;
+  margin-bottom: 30px;
 }
 
 .secTitle::before {
@@ -104,17 +101,18 @@
 }
 
 .subTitle {
+  font-size: calc(28px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
   display: block;
-  width: 50%;
+  width: 70%;
   text-align: center;
   margin: 0 auto;
   color: #00c09d;
   /*文字色*/
-  padding: 0.3em 0;/*上下の余白*/
-  border-top: solid 3px #00c09d;/*上線*/
-  border-bottom: solid 3px #00c09d;/*下線*/
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 0.3em 0; /*上下の余白*/
+  border-top: solid 3px #00c09d; /*上線*/
+  border-bottom: solid 3px #00c09d; /*下線*/
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .color--main {
@@ -507,7 +505,7 @@
 }
 
 .iso-text p {
-  font-size: 2.4rem;
+  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
   padding-right: 15%;
 }
 .iso-wrapper .img {
@@ -522,7 +520,6 @@
   min-height: 150px; */
   width: 50%;
   height: auto;
-  
 }
 
 /* SDGs---------------------------- */
@@ -533,7 +530,6 @@
   margin-top: 30px;
   margin-bottom: 80px;
 }
-
 
 .sd-contents {
   /* display: flex; */
@@ -547,7 +543,7 @@
   position: relative;
 }
 
-.sd-img img{
+.sd-img img {
   width: 100%;
   height: 100%;
 }
@@ -576,7 +572,6 @@
   padding-top: 10px;
 }
 
-
 .sd-under {
   display: flex;
 }
@@ -590,12 +585,12 @@
   margin: 0 auto;
 }
 .sd-text p {
+  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
   margin-bottom: 30px;
 }
 
-
 /* エコアクション------------------- */
-.eco_inner {
+.eco-wrapper {
   width: 95%;
   margin: 0 auto;
   margin-top: 30px;
@@ -609,7 +604,7 @@ span {
   width: 100%;
   text-align: center;
   margin-top: 20px;
-  font-size: 2rem;
+  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
 }
 .eco-report {
   /* height: 300px; */
@@ -646,7 +641,7 @@ span {
   text-align: center;
 }
 .eco-text p {
-  font-size: 2.4rem;
+  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
   margin-bottom: 25px;
 }
 .eco-text p:nth-child(2) {
@@ -800,8 +795,8 @@ span {
   margin: 8px 0;
   color: #2c2c2f;
   background: #cde4ff;
-  border-top: solid 12px #31AFAB;
-  border-bottom: solid 12px #31AFAB;
+  border-top: solid 12px #31afab;
+  border-bottom: solid 12px #31afab;
 }
 /* .vm-img {
   width: 500px;
@@ -813,7 +808,7 @@ span {
 }
 .vm-text p {
   padding: 4%;
-  font-size: 2.4rem;
+  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
 }
 /* 安全衛生----------------------------------------------------------------- */
 .health {
@@ -823,7 +818,7 @@ span {
 }
 .health p {
   padding: 4%;
-  font-size: 2.4rem;
+  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
 }
 
 .health-items {
@@ -833,10 +828,10 @@ span {
   height: 100%;
 }
 
-.health-item1,.health-item2 {
+.health-item1,
+.health-item2 {
   display: flex;
 }
-
 
 .health-items img {
   width: 50%;
@@ -845,17 +840,16 @@ span {
 .health-items p {
   width: 50%;
   padding: 10% 10%;
-  font-size: 24px;
+  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
 }
 .mt-20 {
   margin-top: 20px;
 }
 
-
 /* フッター------------------------------------------------------- */
 footer {
-	background: #101010;
-	padding: 86px 0;
+  background: #101010;
+  padding: 86px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -872,7 +866,7 @@ footer .up {
   justify-content: center;
 }
 
-footer .up a{
+footer .up a {
   margin: 0 30px;
   font-size: 1.5rem;
 }
@@ -898,10 +892,9 @@ footer .center ul li {
   font-size: 1.5rem;
 }
 
-footer .center ul li:last-child{
+footer .center ul li:last-child {
   border-right: none;
 }
-
 
 footer .down {
   margin-top: 100px;
@@ -915,7 +908,6 @@ footer .down p {
   font-size: 4rem;
   color: #fff;
   font-family: "HG行書体", monospace;
-
 }
 
 .copy {
@@ -925,10 +917,10 @@ footer .down p {
   color: #fff;
 }
 
-
 /* レスポンシブ -----------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 1024px) {/*  (~1280px)-------*/
+@media screen and (max-width: 1024px) {
+  /*  (~1280px)-------*/
   .inner {
     width: 94%;
     margin: 0 auto;
@@ -970,7 +962,6 @@ footer .down p {
   }
 } */
 
-
 /* メニュー -----------------------------------------------------------*/
 /* タブレット-------------------- */
 @media screen and (max-width: 1024px) {
@@ -1003,7 +994,7 @@ footer .down p {
   }
 }
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1080px) {
   .box1,
   .box2,
   .box3 {
@@ -1024,15 +1015,14 @@ footer .down p {
   }
 }
 
-
 /* 登録認可 -----------------------------------------------------------*/
 
 /* ISO -----------------------------------------------------------*/
-@media screen and (max-width: 1485px) {
+/* @media screen and (max-width: 1485px) {
   .iso-text p {
     font-size: 2rem;
   }
-}
+} */
 
 @media screen and (max-width: 1024px) {
   .iso-wrapper {
@@ -1046,9 +1036,8 @@ footer .down p {
   }
   .iso-text p {
     padding-right: 0;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
-
 
   .iso-wrapper .img {
     width: auto;
@@ -1057,12 +1046,12 @@ footer .down p {
   }
 }
 
-  /* SDGs -------------------------------------------------------------*/
-@media screen and (max-width: 1485px) {
+/* SDGs -------------------------------------------------------------*/
+/* @media screen and (max-width: 1485px) {
   .sd-text {
     font-size: 2rem;
   }
-}
+} */
 
 @media screen and (max-width: 1024px) {
   .sd-contents {
@@ -1076,21 +1065,21 @@ footer .down p {
 
   .sd-text {
     width: 100%;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
-}
+
   /* eco -----------------------------------------------------------*/
-  .eco1,.eco2 {
+  .eco1,
+  .eco2 {
     width: 50%;
   }
   .eco-text {
     width: 100%;
   }
-  .eco-text p {
+  /* .eco-text p {
     font-size: 2rem;
-  }
+  } */
 }
-
 
 /* 取り組み -------------------------------------------------------------------------*/
 
@@ -1100,8 +1089,9 @@ footer .down p {
     height: 100%;
   }
 
-  .health .text1, .text2 {
-    font-size: 2rem;
+  .health .text1,
+  .text2 {
+    /* font-size: 2rem; */
     width: 53%;
   }
 
@@ -1114,7 +1104,7 @@ footer .down p {
     display: flex;
     align-items: center;
   }
-  
+
   .health-item1 .text1 {
     align-items: center;
     position: absolute;
@@ -1141,9 +1131,7 @@ footer .down p {
   }
 
   .health-items p {
-    background-color: #898484 ;
+    background-color: #898484;
     padding: 0;
-    font-size: 2rem;
   }
 }
-
