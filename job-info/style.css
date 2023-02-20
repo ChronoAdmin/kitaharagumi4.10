@@ -16,12 +16,8 @@
 
 .inner {
     margin: 0 auto;
-
-/* background-color: bisque; */
     padding: 100px 0;
     width: 74%;
-    /* overflow-y: hidden;
-  overflow-x: hidden; */
 }
 
 img {
@@ -32,8 +28,6 @@ img {
 
 .header {
     margin: 0 auto;
-
-/* background-color: bisque; */
     padding: 30px 0;
     width: 94%;
 }
@@ -162,8 +156,6 @@ img {
     display: flex;
     justify-content: center;
     margin-top: 100px;
-
-/* height: 700px; */
     position: relative;
     width: 100%;
 }
@@ -172,8 +164,6 @@ img {
   募集要項のイラスト(右側)------------------------ */
 .offer__container .img {
     height: 350px;
-
-/* min-width: 300px; */
     margin-top: 0;
     width: 100%;
 }
@@ -209,8 +199,6 @@ img {
 
 .full-contents {
     display: flex;
-
-/* margin-bottom: 50px; */
     width: 100%;
 }
 
@@ -259,14 +247,11 @@ img {
 }
 
 .card_box {
-/* border-radius: 20px; */
     background: linear-gradient(
     170deg,
     rgba(236, 236, 236, .959) 0%,
     rgb(201, 201, 201) 100%
     );
-/* box-shadow: 0 15px 20px rgba(107, 107, 107, 0.295); */
-    cursor: pointer;
     height: 250px;
     max-height: 250px;
     position: relative;
@@ -474,7 +459,6 @@ img {
     display: flex;
     font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
     justify-content: center;
-    /* width:20%; */
     text-align: center;
 }
 
@@ -482,8 +466,6 @@ img {
     display: grid;
     gap: 2%;
     grid-template-columns: 1fr 1fr;
-
-/* height: 450px; */
     margin-top: 80px;
     overflow: hidden;
     width: 100%;
@@ -497,47 +479,17 @@ img {
     margin: 0 auto;
     object-fit: cover;
 }
-.declaration-text {
-    background: linear-gradient(#00b380, #004632);
-    color: #ffffff;
-    height: 650px;
-    /* width: 80%; */
-    margin: 0 auto;
-    padding-top: 20px;
-}
-.declaration-text ul {
-    font-size: 2rem;
-    margin: 0 auto;
-    width: 90%;
-}
-.declaration-text li {
-    border-bottom: 1px solid rgba(255, 255, 0, .692);
-    border-width: 3px;
-    letter-spacing: 1.2px;
-    margin-bottom: 30px;
-}
 
-.d-title {
-    font-size: 3rem;
-    margin: 0 auto;
-    margin: 20px auto;
-    text-align: center;
-    width: 80%;
-    /* background-color: red; */
-}
+
 
 /* 採用までの流れ------------------------------------------------------------- */
-/* .adoption {
-  margin-top: 50px;
-} */
 .flows {
-    background-attachment: fixed;
     background-image: url(../images/haikei-1920x1280-反転.jpg);
     background-size: cover;
-    margin: 150px -17.6% 50px -17.6%;
+    margin: 150px auto 50px auto;
     padding: 30px;
     position: relative;
-    width: 135%;
+    width: 100%;
 }
 
 .flows p {
@@ -551,16 +503,12 @@ img {
     column-gap: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     display: grid;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
     margin: 50px auto 0 auto;
     width: 90%;
 }
 .flow > li {
-/* flex-basis: 48%; */
     border: 2px solid #004632;
     -ms-flex-preferred-size: 48%;
     margin-bottom: 8vh;
@@ -596,7 +544,6 @@ img {
 }
 .flow > li dl dd {
     font-size: 18px;
-    /* font-weight: 600; */
 }
 
 .adoption p {
@@ -727,13 +674,8 @@ img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-/* height: 200px; */
     width: 60%;
     z-index: 10;
-}
-
-.vc-items {
-    /* background-color: #000; */
 }
 
 .vc-item {
@@ -837,7 +779,6 @@ SECTION04-----------------------------------------------------------------------
     display: flex;
     height: 250px;
     justify-content: center;
-    min-width: 600px;
     width: 60%;
 }
 
@@ -875,7 +816,6 @@ SECTION04-----------------------------------------------------------------------
 .tel .img img {
     height: 100%;
     width: 100%;
-    /* object-fit: cover; */
 }
 
 /* 
@@ -1089,6 +1029,13 @@ footer .down p {
     text-align: center;
 }
 
+
+
+
+
+
+
+
 /* レスポンシブ -----------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1024px) {
     .inner {
@@ -1096,6 +1043,8 @@ footer .down p {
         width: 94%;
     }
 }
+
+
 /* 入社後のサポート ------------------------------------------------*/
 
 @media screen and (max-width: 1550px) {
@@ -1124,19 +1073,31 @@ footer .down p {
     }
 }
 
-@media screen and (max-width: 599px) { 
-  .offer_sub_container {
-    display: block;
-    width: 100%;
-  }
-  .card_box {
-    height: 150px;
-    /* max-height: 100px; */
-    width: 400px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+@media screen and (max-width: 599px) {
+    .offer_sub_container {
+        display: block;
+        width: 100%;
+    }
+    .card_box {
+        height: 150px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        min-width: 300px;
+        width: 70%;
+    }
+    .card_box span {
+        display: none;
+    }
+    .card_box p {
+        padding-top: 0;
+    }
+
+    .card_box::before, .card_box::after {
+        height: calc(50% - 20px);
+    }
 }
-}
+
+
 
 /* オファーコンテナー ------------------------------------------------*/
 @media screen and (max-width: 1024px) {
@@ -1145,23 +1106,18 @@ footer .down p {
     }
 }
 
+
+
 /* 宣言内容 ------------------------------------------------*/
 @media screen and (max-width: 1024px) {
     .underline-Area {
         align-items: center;
-/* font-size: 2rem; */
         display: flex;
         justify-content: center;
-        /* width:20%; */
         text-align: center;
     }
-    .flows {
-        background-attachment: fixed;
-        background-image: url(../images/haikei-1920x1280-反転.jpg);
-        background-size: cover;
-        margin: 150px auto 0 -3.5%;
-        position: relative;
-        width: 110%;
+    .flow {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1170,8 +1126,6 @@ footer .down p {
         display: grid;
         gap: 2%;
         grid-template-columns: 1fr;
-
-/* height: 450px; */
         margin-top: 80px;
         overflow: hidden;
         width: 100%;
@@ -1192,25 +1146,33 @@ footer .down p {
     }
 }
 
+
+
 /* 社員の声 ------------------------------------------------*/
 @media screen and (max-width: 1024px) {
+    .vc-hero {
+        height: auto;
+    }
     .vc-hero img {
-        left: 50%;
-        position: absolute;
-        top: 0;
-        transform: translateX(-50%);
+        display: none;
     }
     .vc-hero .hero-text {
-        bottom: 0;
         font-size: 1.5rem;
-        left: 50%;
-        min-width: 500px;
-        position: absolute;
-        transform: translateX(-50%);
+        height: auto;
+        margin: 0 auto;
+        position: unset;
+        transform: none;
     }
     .vc-item {
         margin: 0 auto;
         text-align: center;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .vc-hero .hero-text {
+        font-size: 1.3rem;
         width: 80%;
     }
 }
