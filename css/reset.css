@@ -336,8 +336,8 @@ main {
 
 
 
-
-@media screen and (max-width: 1427px) {/* (~1280px) ------------*/
+/* エントリーフォーム */
+@media screen and (max-width: 1427px) {/* (~1427px) ------------*/
   .telbox .left {
     font-size: 3rem;
   }
@@ -357,7 +357,7 @@ main {
   }
 }
 
-  @media screen and (max-width: 1427px) {/* (~1080px) ------------*/
+  @media screen and (max-width: 1427px) {/* (~1427px) ------------*/
     .tel .img {
       display: none;
     }
@@ -369,3 +369,16 @@ main {
     }
   }
 
+@media screen and (max-width: 599px) {
+  .telbox .box {
+    display: block;
+  }
+  .box .left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .box .right {
+    width: 100%;
+  }
+ }
