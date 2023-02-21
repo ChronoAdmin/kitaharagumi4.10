@@ -8,11 +8,11 @@ var swiper = new Swiper(".mySwiper", {
 
       },
       // 980px以上の場合
-      1000: {
+      550: {
         slidesPerView: 2,
       },
       // 1200px以上の場合
-      1200: {
+      1280: {
         slidesPerView: 3,
       }
     } ,
