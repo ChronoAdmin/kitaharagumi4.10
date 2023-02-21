@@ -562,7 +562,7 @@
   justify-content: center;
 }
 .hover-text .text1 {
-  font-size: 22px;
+  font-size:  calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
   padding: 0 20px 10px;
 }
 
@@ -578,7 +578,6 @@
 .sd-text {
   width: 80%;
   padding: 30px;
-  font-size: 2.4rem;
   overflow: hidden;
   height: auto;
   margin: 0 auto;
@@ -699,13 +698,13 @@ span {
   height: 100%;
 }
 .button_line007 a:hover:before {
-  border-top-color: #6bffb8;
-  border-right-color: #6bffb8;
+  border-top-color: #00c09d;
+  border-right-color: #00c09d;
   transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
 }
 .button_line007 a:hover:after {
-  border-bottom-color: #6bffb8;
-  border-left-color: #6bffb8;
+  border-bottom-color: #00c09d;
+  border-left-color: #00c09d;
   transition: border-color 0s ease-out 0.2s, width 0.15s ease-out 0.2s,
     height 0.15s ease-out 0.3s;
 }
@@ -797,7 +796,7 @@ span {
   padding: 8px 19px;
   margin: 8px 0;
   color: #2c2c2f;
-  background: #cde4ff;
+  background: #00c09d38;
   border-top: solid 12px #31afab;
   border-bottom: solid 12px #31afab;
 }
@@ -842,7 +841,7 @@ span {
 }
 .health-items p {
   width: 50%;
-  padding: 5%;
+  padding: 3%;
   font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
 }
 /* .mt-20 {
@@ -980,6 +979,12 @@ footer .down p {
 
 /* 施工事例 -----------------------------------------------------------*/
 @media screen and (max-width: 1380px) {
+  #works .secTitle {
+    width: 94%;
+  }
+}
+
+@media screen and (max-width: 1380px) {
   .box1,
   .box2,
   .box3 {
@@ -1014,6 +1019,27 @@ footer .down p {
   .image6,
   .image7 {
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .box1,
+  .box2,
+  .box3 {
+    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6,
+  .image7 {
+    height: 200px;
   }
 }
 
@@ -1087,53 +1113,36 @@ footer .down p {
 /* 取り組み -------------------------------------------------------------------------*/
 
 /* 安全衛生 -----------------------------------------------------------*/
-/* @media screen and (max-width: 1024px) {
-  .health {
-    height: 100%;
-  }
-
-  .health .text1,
-  .text2 {
-    width: 53%;
-  }
-
-  .health-items {
-    height: 100%;
-  }
-
-  .health-item1 {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-
-  .health-item1 .text1 {
-    align-items: center;
-    position: absolute;
-    margin: auto;
-    left: 47%;
-  }
-
-  .health-item2 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    transform: scale(-1, 1);
-  }
-
-  .health-item2 img {
-    transform: scale(-1, 1);
-  }
-  .health-item2 .text2 {
-    align-items: center;
-    position: absolute;
-    margin: auto;
-    left: 47%;
-    transform: scale(-1, 1);
-  }
-
+@media screen and (max-width: 1024px) {
   .health-items p {
-    background-color: #898484;
-    padding: 0;
+    padding-left: -50px;
   }
-}  */
+}
+
+@media screen and (max-width: 599px) {
+  .health-items p {
+    background-color: #e7e3e3ad;
+  }
+  .health-item1 p {
+    width: 60%;
+    margin-left: -10%;
+  }
+  .health-item2 p {
+    width: 60%;
+    margin-right: -10%;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 420px) {
+  .health-item1 p {
+    width: 70%;
+    margin-left: -20%;
+  }
+  .health-item2 p {
+    width: 70%;
+    margin-right: -20%;
+  }
+  .health-items img {
+    width: 60%;
+  }
+}
