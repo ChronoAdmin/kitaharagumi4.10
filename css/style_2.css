@@ -197,7 +197,7 @@ main {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 990px) { 
+@media screen and (max-width: 1024px) {
   #colnav {
     display: none;
   }
@@ -317,11 +317,11 @@ main {
   transition: all 1s;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1024px) {
   .container {
     width: 100%;
   }
- }
+}
 
 .bgWrap {
   width: 100%;
@@ -529,13 +529,12 @@ SECTION01 / NEWS----------------------------------------------------------------
 /* 2pata-n-------------------------------------------------------------  */
 .news {
   width: 80%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 0px auto;
 }
 
 .sns_contents {
   width: 80%;
   margin: 0 auto;
-  margin-top: 50px;
   box-shadow: 10px 10px 20px #3333330c;
 }
 
@@ -565,6 +564,7 @@ SECTION01 / NEWS----------------------------------------------------------------
   border-radius: 6px 6px 0 0;
   transition: all 0.3s;
 }
+
 
 .ml5 {
   margin-left: 5px;
@@ -729,7 +729,7 @@ SECTION01 / NEWS----------------------------------------------------------------
 /* 左側の【テキスト】 */
 
 .left .txts p {
-  font-size: clamp(1.6rem, 1.507rem + 0.39vw, 1.975rem);
+  font-size: calc(16px + (20 - 16) * ((100vw - 1025px) / (1920 - 1025)));
   line-height: 1.8;
   transition: all 0.3s;
 }
@@ -1020,11 +1020,7 @@ NULL----------------------------------------------------------------------------
   display: inline-block;
   text-align: left;
   font-size: 60px;
-
 }
-
-
-
 
 /* 
 SECTION03----------------------------------------------------------------------------- */
@@ -1180,7 +1176,7 @@ SECTION04-----------------------------------------------------------------------
 
 .job-box {
   position: relative;
-  width: 33%;
+  width: 30%;
   /* min-width: 220px; */
   height: 400px;
   display: flex;
@@ -1195,53 +1191,14 @@ SECTION04-----------------------------------------------------------------------
   margin-right: 0px;
 }
 
-.job-box::before {
-  content: " ";
-  position: absolute;
-  top: 50;
-  left: 50;
-  width: 30%;
-  height: 80%;
-  min-width: 130px;
-  /* height: 380px; */
-  text-decoration: none;
-  background: #fff;
-  border-radius: 3px;
-  transform: skewX(15deg);
-  transition: 0.5s;
-}
-
-.job-box::after {
-  content: "";
-  position: absolute;
-  top: 50;
-  left: 50;
-  width: 50%;
-  height: 80%;
-  background: #fff;
-  border-radius: 8px;
-  transform: skewX(15deg);
-  transition: 0.5s;
-  filter: blur(30px);
-}
-
-.job-box:hover:before,
-.job-box:hover:after {
-  transform: skewX(0deg) scaleX(1.3);
-}
-
-.job-box:before,
-.job-box:after {
-  background-image: linear-gradient(315deg, #155041ad, #03d39fcb);
-}
-
 .job-box .content {
   position: relative;
-  width: 50%;
+  width: 100%;
   min-width: 290px;
   height: 254px;
   background: rgba(255, 255, 255, 0.05);
   background-size: cover;
+  background-position: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   z-index: 1;
@@ -1295,68 +1252,68 @@ SECTION04-----------------------------------------------------------------------
 }
 
 .tel {
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
-#contact .lorem {
+#entry .lorem {
+  font-size: 18px;
   padding: 50px;
   text-align: center;
-  font-size: 18px;
 }
 
 .telbox {
-  background-color: darkcyan;
-  width: 60%;
-  height: 250px;
-  display: flex;
   align-items: center;
+  background-color: darkcyan;
+  display: flex;
+  height: 250px;
   justify-content: center;
-  min-width: 500px;
+  width: 60%;
 }
 
 .telbox .box {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 90%;
 }
 
 .telbox .left {
-  font-size: 2.5rem;
+  color: white;
+  font-size: 3.5rem;
 }
-@media screen and (max-width: 1500px) {
-  .telbox .left {
-    font-size: 2.1rem;
-  }
-}
-
 .telbox .right {
-  padding: 25px;
   background-color: white;
+  padding: 25px;
   width: 50%;
 }
-.telbox .right p:nth-child(1) {
+.telbox .right a {
+  display: block;
+  border-bottom: 1px solid #000000;
   font-size: 4rem;
   text-align: center;
-  border-bottom: 1px solid #000;
+  color: #008afc;
 }
 .telbox .right p:nth-child(2) {
-  text-align: center;
   font-size: 2rem;
+  text-align: center;
 }
 
 .tel .img {
-  width: 35%;
-  min-width: 250px;
   height: 400px;
+  width: 35%;
 }
 
 .tel .img img {
-  width: 100%;
   height: 100%;
-  /* object-fit: cover; */
+  width: 100%;
+}
+
+.lorem {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
 }
 
 /* contact_section --------------------------------------------------------------------*/
@@ -1553,7 +1510,7 @@ SECTION05-----------------------------------------------------------------------
 }
 
 .questionBox {
-  width: 50%;
+  width: 60%;
 }
 
 .cp_qa {
@@ -1568,7 +1525,7 @@ SECTION05-----------------------------------------------------------------------
   position: relative;
 }
 .cp_qa label {
-  font-size: 2.4rem;
+  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
   position: relative;
   display: block;
   width: 100%;
@@ -1777,25 +1734,60 @@ footer .down p {
 
 /* レスポンシブ ----------------------------------------------------------------------------------------------------------------------------*/
 
-
-@media screen and (max-width: 1280px) {/*  (~1280px)-------*/
+@media screen and (max-width: 1024px) {
+  /*  (~1280px)-------*/
   .inner {
-    width: 84%;
+    width: 94%;
   }
 }
 
-
 /* Instagramの画像数 -----------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 1280px) {/*  (~1280px)-------*/
+@media screen and (max-width: 1280px) {
+  /*  (~1280px)-------*/
   .insta_images .insta_card:nth-child(3) {
     display: none;
   }
 }
 
+@media screen and (max-width: 730px) {
+  .insta_card {
+    width: 200px;
+    height: 284px;
+  }
+  .sns_contents {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .insta_card {
+    width: 150px;
+    height: 204px;
+  }
+  .card-image {
+    height: 40%;
+  }
+  .button {
+    --color: #00a97f;
+    display: block;
+    padding: 0.2em 1.55em;
+  }
+  .heading {
+    font-weight: 600;
+    color: rgb(179, 179, 179);
+    padding: 7px;
+    font-size: 12px;
+  }
+  .fa-paper-plane::before {
+    display: none;
+  }
+ }
+
 /* カンパニー ------------------------------------------------*/
 
-@media screen and (max-width: 1280px) {/*  (~1280px)-------*/
+@media screen and (max-width: 1280px) {
+  /*  (~1280px)-------*/
   .details {
     display: block;
     height: auto;
@@ -1838,12 +1830,80 @@ footer .down p {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  /* カンパニーの写真 */
+  .details .right {
+    width: 90%;
+    margin: 0 auto;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 730px) {
+  /* カンパニーの写真 */
+  .details .right {
+    width: 90%;
+    margin: 0 auto;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .hover-text .text1 {
+    font-size: 16px;
+    padding: 0 20px 10px;
+  }
+  .hover-text .text2 {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+}
+
+/* Q&A ------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+  .cp_qa label {
+    font-size: 20px;
+  }
+  .cp_qa .cp_actab-content {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #sec5 .contents .img-left,
+  #sec5 .contents .img-right {
+    display: none;
+  }
+  .questionBox {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  #sec5 .contents {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 599px) { 
+  .cp_qa label {
+    font-size: 16px;
+  }
+  .cp_qa .cp_actab-content {
+    font-size: 14px;
+  }
+}
+
 /*  Job-Info(Top)------------------------------------------------*/
 
-@media screen and (max-width: 1280px) {/*  (~1280px)-------*/
+@media screen and (max-width: 1280px) {
+  /*  (~1280px)-------*/
   .job-box .content {
     position: relative;
-    width: 50%;
+    width: 100%;
     min-width: 220px;
     height: 224px;
   }
@@ -1852,7 +1912,8 @@ footer .down p {
   }
 }
 
-@media screen and (max-width: 1080px) { /*  (~1080px)-------*/
+@media screen and (max-width: 1024px) {
+  /*  (~1080px)-------*/
   .job-boxs {
     display: none;
   }
@@ -1870,7 +1931,7 @@ footer .down p {
     background: #212121;
     display: flex;
     gap: 5px;
-    padding: .4em;
+    padding: 0.4em;
     background: rgba(0, 90, 90, 0.603);
   }
   .job-card-1080 p {
@@ -1879,7 +1940,7 @@ footer .down p {
     overflow: hidden;
     cursor: pointer;
     border-radius: 2px;
-    transition: all .5s;
+    transition: all 0.5s;
     background: #03d39fa8;
     border: 1px solid #ffffff;
     display: flex;
@@ -1909,16 +1970,16 @@ footer .down p {
   }
   .job-card-1080 p span {
     min-width: 14em;
-    padding: .5em;
+    padding: 0.5em;
     text-align: center;
     transform: rotate(-90deg);
-    transition: all .5s;
+    transition: all 0.5s;
     text-transform: uppercase;
     color: #ffffff;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-size: 2rem;
   }
-  
+
   .job-card-1080 p:hover span {
     transform: rotate(0);
   }
@@ -1926,7 +1987,7 @@ footer .down p {
 
 /* お問い合わせ(Top) ------------------------------------------------*/
 
-@media screen and (max-width: 1280px) {/* (~1280px) ------------*/
+/* @media screen and (max-width: 1280px) {
   .telbox .left {
     font-size: 2rem;
   }
@@ -1945,7 +2006,7 @@ footer .down p {
     font-size: 2rem;
   }
 
-  @media screen and (max-width: 1080px) {/* (~1080px) ------------*/
+  @media screen and (max-width: 1080px) {
     .tel .img {
       display: none;
     }
@@ -1956,23 +2017,23 @@ footer .down p {
       font-size: 2.5rem;
     }
   }
-}
+} */
 
 /* null ------------------------------------------------*/
-@media screen and (max-width: 1280px) { /* (~1280px) ------------*/
+@media screen and (max-width: 1280px) {
+  /* (~1280px) ------------*/
   .null .nullTxt {
     padding: 25px;
   }
-  
-.null .nullTxt p {
-  display: inline-block;
-  text-align: left;
-  font-size: 40px;
-}
-.omoji {
-  font-size: 49px;
-}
 
+  .null .nullTxt p {
+    display: inline-block;
+    text-align: left;
+    font-size: 40px;
+  }
+  .omoji {
+    font-size: 49px;
+  }
 }
 
 /* section_line_title ------------------------------------------------*/
@@ -1982,15 +2043,98 @@ footer .down p {
   #sec5 .section_line_title::before {
     font-size: 8rem;
   } */
- }
+}
 
+@media screen and (max-width: 1024px) {
+}
 
+@media screen and (max-width: 599px) {
+}
 
+/* エントリーフォーム ------------------------------------------------*/
 
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1427px) {
+  /* (~1427px) ------------*/
+  .telbox .left {
+    font-size: 3rem;
+  }
+  .telbox .right {
+    padding: 25px;
+    background-color: white;
+    width: 50%;
+  }
+  .telbox .right p:nth-child(1) {
+    font-size: 4rem;
+    text-align: center;
+    border-bottom: 1px solid #000;
+  }
+  .telbox .right p:nth-child(2) {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .tel .img {
+    display: none;
+  }
+  .telbox {
+    width: 100%;
+  }
 
 }
 
-@media screen and (max-width: 599px) { }
+@media screen and (max-width: 1024px) { 
+  .telbox .left {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .telbox .box {
+    display: block;
+  }
+  .box .left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  .box .right {
+    width: 100%;
+  }
+  .box .right a {
+    font-size: 3rem;
+
+  }
+  .lorem {
+    font-size: 10px;
+  }
+}
 
 
+
+@media screen and (max-width: 599px) {
+  .entryForm form {
+    padding: 50px 25px;
+  }
+  .entryForm .input-group {
+    margin-bottom: 30px;
+  }
+  .entryForm .input,
+  textarea {
+    font-size: 16px;
+  }
+  .label {
+    font-size: 12px;
+  }
+  .entryForm span {
+    font-size: 12px;
+  }
+  .entryForm input:focus ~ .label,
+  .entryForm input:valid ~ .label,
+  textarea:valid ~ .label,
+  textarea:focus ~ .label {
+    font-size: 12px;
+  }
+  .check {
+    font-size: 14px;
+  }
+}
