@@ -331,7 +331,7 @@ companyメニュー-------------------------------------------------------- */
 .cp_timeline03 {
   position: relative;
   margin: 3em auto;
-  width: 70%;
+  width: 80%;
 }
 /* 
 縦線---------------------------- */
@@ -690,7 +690,7 @@ footer .down p {
 
   .msg__title2 {
     display: block;
-    font-size: 2.8rem;
+    font-size: 2.75rem;
     text-align: center;
   }
   .msg__title p:nth-child(1) {
@@ -808,10 +808,13 @@ input[type="checkbox"].on-off{
 /* スマホ------------------------ */
 @media screen and (max-width: 599px) { 
   .msg__title2 {
-    font-size: 1.8rem;
+    font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (599 - 320)));
   }
   .msg__img {
     margin: 20px auto;
+  }
+  .msg__left {
+    min-width: 250px;
   }
   .msg__right {
     margin-top: 30px;
@@ -819,8 +822,15 @@ input[type="checkbox"].on-off{
     width: 90%;
   }
   .msg__right .open .msg__text p {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    line-height: 2;
     margin-bottom: 5px;
+  }
+  .box27 {
+    background-color: #b9b9b970;
+  }
+  .box27:after {
+    background-color: unset;
   }
 }
 
