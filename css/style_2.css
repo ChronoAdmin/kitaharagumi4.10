@@ -64,18 +64,18 @@ button {
 /* 
 横向きのヘッダー-------------------------------------------------------------------- */
 
-header nav {
+#header-nav {
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
+  display: grid;
+  grid-template-columns: 500px 1fr 150px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
-  padding-top: 40px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 2%;
+  background-color: #00a97f;
   transition: 0.5s;
 }
 
@@ -92,7 +92,11 @@ header nav {
   font-family: "HG行書体", monospace;
 }
 
-header nav ul li {
+#header-nav ul{
+  justify-content: flex-end;
+}
+
+#header-nav ul li {
   display: inline-block;
   padding: 10px 20px;
   transition: 0.3s;
