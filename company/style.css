@@ -714,11 +714,13 @@ footer .down p {
   }
 
   .msg__right {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 80px;
   }
+  
+  
   .msg__right .open .msg__text p {
     text-align: center;
   }
@@ -808,7 +810,7 @@ input[type="checkbox"].on-off{
 /* スマホ------------------------ */
 @media screen and (max-width: 599px) { 
   .msg__title2 {
-    font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (599 - 320)));
+    font-size: calc(13px + (27 - 13) * ((100vw - 320px) / (599 - 320)));
   }
   .msg__img {
     margin: 20px auto;
@@ -819,10 +821,10 @@ input[type="checkbox"].on-off{
   .msg__right {
     margin-top: 30px;
     margin-bottom: 50px;
-    width: 90%;
+    width: 100%;
   }
   .msg__right .open .msg__text p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 2;
     margin-bottom: 5px;
   }
