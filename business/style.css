@@ -5,7 +5,7 @@
 
 .fw900 {
   font-weight: bold;
-  font-size: calc(22px + (40 - 30) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 320)));
 }
 
 /* 
@@ -399,7 +399,7 @@
 }
 
 .iso-text p {
-  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(18px + (24 - 18) * ((100vw - 1025px) / (1920 - 320)));
   padding-right: 15%;
 }
 .iso-wrapper .img {
@@ -452,7 +452,7 @@
   justify-content: center;
 }
 .hover-text .text1 {
-  font-size:  calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size:  calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 320)));
   padding: 0 20px 10px;
 }
 
@@ -472,7 +472,7 @@
 
 }
 .sd-text p {
-  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(18px + (24 - 18) * ((100vw - 1025px) / (1920 - 320)));
   padding-top: 30px;
   width: 80%;
   margin: 0 auto;
@@ -494,7 +494,7 @@ span {
   width: 100%;
   text-align: center;
   margin-top: 20px;
-  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(18px + (24 - 18) * ((100vw - 1025px) / (1920 - 320)));
 }
 .eco-report {
   justify-content: center;
@@ -528,7 +528,7 @@ span {
   text-align: center;
 }
 .eco-text p {
-  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(18px + (24 - 18) * ((100vw - 1025px) / (1920 - 320)));
   margin-bottom: 25px;
 }
 .eco-text p:nth-child(2) {
@@ -701,9 +701,13 @@ span {
   height: auto;
   margin-bottom: 80px;
 }
+.dedail {
+  padding-bottom: 30px;
+}
+
 .health p {
   margin: 0 auto;
-  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(18px + (24 - 18) * ((100vw - 1025px) / (1920 - 320)));
   width: 80%;
 }
 
@@ -724,7 +728,7 @@ span {
 .health-items p {
   width: 50%;
   padding: 3%;
-  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(18px + (24 - 18) * ((100vw - 1025px) / (1920 - 320)));
 }
 
 /* フッター------------------------------------------------------- */
