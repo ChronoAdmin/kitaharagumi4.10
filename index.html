@@ -21,6 +21,14 @@
   <body ontouchstart="">
     <!-- 全体のwrap -->
     <div class="wrap">
+      <div class="loading">
+        <div class="spinner-box">
+          <div class="circle-border">
+            <div class="circle-core"></div>
+          </div>
+          <div class="loadingtxt">Loading...</div>
+        </div>
+      </div>
       <!-- <div id="instagram">
         <div class="nav_contents">
           <div class="toggle_btn">
@@ -847,6 +855,15 @@
       </footer>
     </div>
 
+    <script>
+      window.onload = function() {
+        const timeout = 3000
+        setTimeout(() => {
+          const loader = document.querySelector(".loading")
+          loader.classList.add("loaded")
+        }, timeout);
+      }
+    </script>
     <script src="/js/script.js"></script>
     <script src="./js/script.js"></script>
     <script src="/js/slide.js"></script>
