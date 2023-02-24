@@ -195,6 +195,7 @@
   height: 600px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 .box1::after {
   content: "";
@@ -222,6 +223,8 @@
   animation: anime 30s 0s infinite;
   z-index: 0;
   opacity: 0;
+  border: 10px solid #FFF;
+  box-shadow: 0 0 10px #999;
 }
 /* 画像の指定  */
 .box1 .image1 {
@@ -277,6 +280,7 @@
   position: relative;
   overflow: hidden;
   margin-left: auto;
+  margin-bottom: 30px;
 }
 .box2::after {
   content: "";
@@ -394,22 +398,24 @@
   margin-bottom: 80px;
 }
 .iso-text {
-  width: 50%;
+  width: 40%;
   overflow: hidden;
 }
 
 .iso-text p {
-  font-size: calc(18px + (24 - 18) * ((100vw - 1025px) / (1920 - 320)));
+  font-size: calc(16px + (24 - 16) * ((100vw - 1025px) / (1920 - 320)));
   padding-right: 15%;
 }
 .iso-wrapper .img {
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: flex;
+  justify-content: center;
 }
 .iso-wrapper .img img {
   width: 50%;
   height: auto;
+  min-width: 160px;
 }
 
 /* SDGs---------------------------- */
@@ -503,22 +509,24 @@ span {
 .eco-left {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .eco1 {
-  width: 50%;
+  width: 35%;
   height: auto;
+  margin-right: 30px;
 }
 
 .eco2 {
-  width: 50%;
+  width: 35%;
   height: 100%;
 }
 
 .eco-left img {
   width: 100%;
   height: 100%;
+  border: #898484 1px solid;
 }
 
 .eco-text {
@@ -707,7 +715,7 @@ span {
 
 .health p {
   margin: 0 auto;
-  font-size: calc(18px + (24 - 18) * ((100vw - 1025px) / (1920 - 320)));
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
   width: 80%;
 }
 
@@ -721,6 +729,11 @@ span {
   align-items: center;
 }
 
+.health-items {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .health-items img {
   width: 50%;
   height: 100%;
@@ -728,7 +741,7 @@ span {
 .health-items p {
   width: 50%;
   padding: 3%;
-  font-size: calc(18px + (24 - 18) * ((100vw - 1025px) / (1920 - 320)));
+  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
 }
 
 /* フッター------------------------------------------------------- */
@@ -916,7 +929,7 @@ footer .down p {
 /* 登録認可 -----------------------------------------------------------*/
 
 /* ISO -----------------------------------------------------------*/
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .iso-wrapper {
     display: block;
   }
@@ -929,14 +942,40 @@ footer .down p {
   }
   .iso-text p {
     padding-right: 0;
-    /* font-size: 1.8rem; */
   }
 
   .iso-wrapper .img {
     width: 80%;
-    /* display: block; */
     height: auto;
     margin: 0 auto;
+  }
+} */
+@media screen and (max-width: 1160px) {
+  .iso-wrapper {
+    display: block;
+  }
+
+  .iso-text {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .iso-text p {
+    padding-right: 0;
+  }
+
+  .iso-wrapper .img {
+    width: 100%;
+    height: auto;
+  }
+  .iso-wrapper .img img {
+    min-width: 100px;
+    width: 35%;
+    height: auto;
+  }
+  .iso-wrapper .img img:first-child {
+    margin-right: 30px;
   }
 }
 
@@ -992,31 +1031,34 @@ footer .down p {
 
 @media screen and (max-width: 599px) {
   .health-items p {
-    /* background-color: #e7e3e3ad; */
-    background: linear-gradient(135deg, #ffffff00, #67676702);
-    backdrop-filter: blur(5px);
-    box-shadow: 3px 3px 20px #989898a4;
+    background-color: #ffffffbd;
+    box-shadow: 3px 3px 6px -2px #555,
+  3px 3px 8px rgba(255,255,255,0.8) inset;
   }
   .health-item1 p {
-    width: 60%;
-    margin-left: -10%;
+    width: 70%;
+    margin-left: -40%;
   }
   .health-item2 p {
-    width: 60%;
-    margin-right: -10%;
+    width: 70%;
+    margin-right: -40%;
     z-index: 1;
+  }
+  .health-item1 {
+    padding-bottom: 20px;
+  }
+  .health-items img {
+    width: 75%;
+  }
+  .health-item1,
+  .health-item2 {
+    display: flex;
+    align-items: end;
   }
 }
 @media screen and (max-width: 420px) {
-  .health-item1 p {
-    width: 70%;
-    margin-left: -20%;
-  }
-  .health-item2 p {
-    width: 70%;
-    margin-right: -20%;
-  }
-  .health-items img {
-    width: 60%;
+  .health-items {
+    width: 94%;
+    margin: 0 auto;
   }
 }
