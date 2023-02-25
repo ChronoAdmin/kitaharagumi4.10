@@ -5,7 +5,14 @@
 
 .fw900 {
   font-weight: bold;
-  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 320)));
+  font-size: calc(18px + (30 - 20) * ((100vw - 1025px) / (1920 - 320)));
+  background: -webkit-linear-gradient( left, rgb(245, 255, 100) 50%, transparent 50% );
+  background: -moz-linear-gradient( left, rgb(245, 255, 100) 50%, transparent 50% );
+  background: linear-gradient(left, rgb(245, 255, 100) 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: 200% 0.8em;
+  background-position: 100% 0.5em;
+  transition: 2s;
 }
 
 /* 
@@ -224,7 +231,7 @@
   z-index: 0;
   opacity: 0;
   border: 10px solid #FFF;
-  box-shadow: 0 0 10px #999;
+  box-shadow: 5 5 10px #999;
 }
 /* 画像の指定  */
 .box1 .image1 {
@@ -478,7 +485,7 @@
 
 }
 .sd-text p {
-  font-size: calc(18px + (24 - 18) * ((100vw - 1025px) / (1920 - 320)));
+  font-size: calc(16px + (24 - 16) * ((100vw - 1025px) / (1920 - 320)));
   padding-top: 30px;
   width: 80%;
   margin: 0 auto;
@@ -701,7 +708,7 @@ span {
 }
 .vm-text p {
   padding: 4%;
-  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc (18px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
 }
 /* 安全衛生----------------------------------------------------------------- */
 .health {
@@ -716,7 +723,7 @@ span {
 .health p {
   margin: 0 auto;
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
-  width: 80%;
+  width: 50%;
 }
 
 /* .health-items {
@@ -741,7 +748,8 @@ span {
 .health-items p {
   width: 50%;
   padding: 3%;
-  font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
+  letter-spacing: -0.07em;
+  font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
 }
 
 /* フッター------------------------------------------------------- */
@@ -1031,6 +1039,7 @@ footer .down p {
 
 @media screen and (max-width: 599px) {
   .health-items p {
+    border-left:solid 5px #e9b3a3;
     background-color: #ffffffbd;
     box-shadow: 3px 3px 6px -2px #555,
   3px 3px 8px rgba(255,255,255,0.8) inset;

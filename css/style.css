@@ -2468,6 +2468,7 @@ footer .down p {
 
 .loaded {
   opacity: 0;
+  z-index: -100;
 }
 
 /* ALTERNATING ORBITS */
