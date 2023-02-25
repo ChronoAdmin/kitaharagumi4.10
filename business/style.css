@@ -6,13 +6,10 @@
 .fw900 {
   font-weight: bold;
   font-size: calc(18px + (30 - 20) * ((100vw - 1025px) / (1920 - 320)));
-  background: -webkit-linear-gradient( left, rgb(245, 255, 100) 50%, transparent 50% );
-  background: -moz-linear-gradient( left, rgb(245, 255, 100) 50%, transparent 50% );
-  background: linear-gradient(left, rgb(245, 255, 100) 50%, transparent 50%);
+  background: rgba(255, 255, 0, 0.5);
   background-repeat: no-repeat;
   background-size: 200% 0.8em;
   background-position: 100% 0.5em;
-  transition: 2s;
 }
 
 /* 
@@ -708,7 +705,7 @@ span {
 }
 .vm-text p {
   padding: 4%;
-  font-size: calc (18px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(18px + (24 - 18) * ((100vw - 1025px) / (1920 - 320)));
 }
 /* 安全衛生----------------------------------------------------------------- */
 .health {
@@ -1038,6 +1035,9 @@ footer .down p {
 }
 
 @media screen and (max-width: 599px) {
+  .health p {
+    width: 80%;
+  }
   .health-items p {
     border-left:solid 5px #e9b3a3;
     background-color: #ffffffbd;
