@@ -929,3 +929,22 @@ input[type="checkbox"].on-off{
     height: 500px;
   } */
 }
+
+/* フッターレスポンシブ -----------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+  footer .center ul {
+    width: 75%;
+  }
+  footer .center ul li {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 599px) {
+  footer .center ul {
+    width: 94%;
+  }
+  footer .center ul li {
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+}
