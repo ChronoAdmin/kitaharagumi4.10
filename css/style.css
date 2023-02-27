@@ -76,7 +76,8 @@ button {
   width: 100%;
   background-color: #fff;
   transition: 0.5s;
-  height: 100px;
+  /* height: 100px; */
+  padding: 20px 0;
 }
 
 .logo {
@@ -503,6 +504,7 @@ main {
   width: 100%;
   height: auto;
   clip-path: inset(0);
+  /* will-change: transform; */
   /* background-image: url(../images/haike-1920x1280.jpg);
   background-attachment: fixed;
   background-size: cover; */
@@ -1938,7 +1940,7 @@ footer .down p {
     grid-template-columns: 1fr;
     /* grid-template-rows: 50px 50px; */
     row-gap: 0px;
-    height: 180px;
+    /* height: 180px; */
     border-top: 15px solid #008665;
   }
   #header-nav ul {
@@ -2041,12 +2043,13 @@ footer .down p {
     display: none;
   }
   #header-nav {
-    height: 120px;
+    /* height: 120px; */
+    padding: 10px 0;
   }
   #header-nav ul {
-    padding-bottom: 10px;
     margin-left: 0;
     grid-template-columns: repeat(5, auto);
+    margin: 10px 0 0 0 ;
   }
   #header-nav ul li a {
     font-size: calc(13px + (20 - 13) * ((100vw - 320px) / (730 - 320)));
