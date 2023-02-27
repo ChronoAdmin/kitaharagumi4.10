@@ -290,9 +290,10 @@ header .mv {
   left: 50%;
   transform: translateX(-50%);
   max-width: 1920px;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  min-height: 100vh;
+  /* width: auto;
+  height: auto; */
+  width: 1920px;
   z-index: -100;
   background: url("poster.jpg") no-repeat;
   background-size: cover;
@@ -301,6 +302,7 @@ header .mv {
 header video {
   min-width: 100%;
   min-height: 100%;
+  object-fit: cover;
   /* display: none; */
 }
 
@@ -499,27 +501,45 @@ main {
 
 .bgWrap {
   width: 100%;
-  background-image: url(../images/haike-1920x1280.jpg);
+  height: auto;
+  clip-path: inset(0);
+  /* background-image: url(../images/haike-1920x1280.jpg);
   background-attachment: fixed;
+  background-size: cover; */
+}
+.bgWrap::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/haike-1920x1280.jpg);
+  background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 .bgWrapSecond {
   width: 100%;
-  background-image: url(../images/haikei-1920x1280-反転.jpg);
-  /* backdrop-filter: ; */
-  background-attachment: fixed;
-  background-size: cover;
-  position: relative;
+  height: auto;
+  clip-path: inset(0);
 }
 
 .bgWrapSecond::before {
   content: "";
-  position: absolute;
+  display: block;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: #98cabe3f;
+  height: 100vh;
+  background-image: url(../images/haike-1920x1280.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 /* 共通
@@ -2046,6 +2066,12 @@ footer .down p {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .header-title {
+    top: 45%;
+  }
+ }
+
 /* Instagramの画像数 -----------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 1280px) {
@@ -2549,11 +2575,3 @@ footer .down p {
   }
 }
 
-.content {
-  color: red;
-  position: absolute;
-  font-size: 5rem;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-  transition-delay: 0.4s;
-}
