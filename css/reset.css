@@ -55,7 +55,8 @@ main {
   display: flex;
   position: relative;
   z-index: 1;
-  border-top: 5px solid #4e4e4e3d;
+  /* border-top: 5px solid #4e4e4e3d; */
+  box-shadow: 0 -2px 5px #83838354;
 }
 
 /* 
