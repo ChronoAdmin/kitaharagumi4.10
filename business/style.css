@@ -227,7 +227,7 @@
   animation: anime 30s 0s infinite;
   z-index: 0;
   opacity: 0;
-  border: 10px solid #FFF;
+  border: 10px solid #0ecaa8;
   box-shadow: 5 5 10px #999;
 }
 /* 画像の指定  */
@@ -705,7 +705,7 @@ span {
 }
 .vm-text p {
   padding: 4%;
-  font-size: calc(18px + (24 - 18) * ((100vw - 1025px) / (1920 - 320)));
+  font-size: calc(18px + (24 - 14) * ((100vw - 1025px) / (1920 - 320)));
 }
 /* 安全衛生----------------------------------------------------------------- */
 .health {
@@ -1041,6 +1041,7 @@ footer .down p {
   .health-items p {
     border-left:solid 5px #e9b3a3;
     background-color: #ffffffbd;
+    backdrop-filter: blur(3px);
     box-shadow: 3px 3px 6px -2px #555,
   3px 3px 8px rgba(255,255,255,0.8) inset;
   }
