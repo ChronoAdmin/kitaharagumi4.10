@@ -334,22 +334,15 @@ header nav ul li:nth-child(4) a::before {
   top: 50%;
   left: 50%;
   transform: translateY(-50%);
-  color: #000000;
+  color: #ffffff;
+  text-shadow: 5px 5px 10px #0029afa9;
   font-size: 5rem;
   text-align: center;
   z-index: 5;
 }
 
-.pan {
-  width: 100%;
-  background-color: #d6d4d4;
-  height: 20px;
-  z-index: 5;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
+
+
 
 /* #page_title::before {
   content: "";
