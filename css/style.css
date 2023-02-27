@@ -2575,11 +2575,3 @@ footer .down p {
   }
 }
 
-.content {
-  color: red;
-  position: absolute;
-  font-size: 5rem;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-  transition-delay: 0.4s;
-}
