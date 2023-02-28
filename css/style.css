@@ -1768,6 +1768,8 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  position: relative;
+  z-index: 200;
 }
 
 footer .footer-wrap {
@@ -1776,13 +1778,17 @@ footer .footer-wrap {
 }
 
 footer .up {
-  display: flex;
+  display: grid;
+  grid-template-columns: 100px 100px;
   justify-content: center;
+  gap: 5%;
 }
 
 footer .up a {
-  margin: 0 30px;
+  display: block;
+  /* margin: 0 30px; */
   font-size: 1.5rem;
+  padding: 10px 0;
 }
 
 footer .center {
