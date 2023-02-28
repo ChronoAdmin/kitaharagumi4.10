@@ -1346,16 +1346,20 @@ SECTION04-----------------------------------------------------------------------
   position: absolute;
   content: "Job-Info";
   top: 0;
-  right: 30%;
+  /* right: 30%; */
+  left: 50%;
+  transform: translateX(-50%);
   color: #00c09da0;
   font-weight: 800;
   top: 0px;
   opacity: 0.3;
   filter: blur(1px);
   text-shadow: 10px 10px 10px rgb(111, 111, 111);
-  font-size: 11rem;
+  /* font-size: 11rem; */
   z-index: 0;
 }
+
+
 
 .job-card-1080-wrap {
   display: none;
@@ -1435,16 +1439,19 @@ SECTION04-----------------------------------------------------------------------
   position: absolute;
   content: "Contact";
   top: 0;
-  right: 30%;
+  /* right: 30%; */
+  left: 50%;
+  transform: translateX(-50%);
   color: #00c09da0;
   font-weight: 800;
   top: 0px;
-  opacity: 0.5;
+  opacity: 0.3;
   filter: blur(1px);
   text-shadow: 10px 10px 10px rgb(111, 111, 111);
   font-size: 11rem;
   z-index: 1;
 }
+
 
 .tel {
   display: flex;
@@ -1653,11 +1660,13 @@ SECTION05-----------------------------------------------------------------------
   position: absolute;
   content: "Q&A";
   top: 0;
-  right: 30%;
+  /* right: 30%; */
+  left: 50%;
+  transform: translateX(-50%);
   color: #00c09da0;
   font-weight: 800;
   top: 0px;
-  opacity: 0.5;
+  opacity: 0.3;
   filter: blur(1px);
   text-shadow: 10px 10px 10px rgb(111, 111, 111);
   font-size: 11rem;
@@ -1932,10 +1941,34 @@ footer .down p {
 
 /* レスポンシブ ----------------------------------------------------------------------------------------------------------------------------*/
 
+/* 共通 ------------------------------------------------*/
+@media screen and (max-width: 1920px) {
+  .sectitle {
+    font-size: calc(45px + (50 - 45) * ((100vw - 1920px) / (1920 - 1025)));;
+  }
+  .section_line_title {
+    font-size: calc(55px + (60 - 55) * ((100vw - 1920px) / (1920 - 1025)));;
+  }
+  #jobinfo .section_line_title::before {
+    font-size: calc(90px + (110 - 90) * ((100vw - 1920px) / (1920 - 1025)));;
+  }
+  #contact .section_line_title::before {
+    font-size: calc(90px + (110 - 90) * ((100vw - 1920px) / (1920 - 1025)));;
+  }
+  #sec5 .section_line_title::before {
+    font-size: calc(90px + (110 - 90) * ((100vw - 1920px) / (1920 - 1025)));;
+  }
+}
 @media screen and (max-width: 1024px) {
   /*  (~1280px)-------*/
   .inner {
     width: 94%;
+  }
+  .sectitle {
+    font-size: calc(40px + (45 - 40) * ((100vw - 1024px) / (1024 - 600)));;
+  }
+  .section_title {
+    font-size: calc(40px + (55 - 40) * ((100vw - 1024px) / (1024 - 600)));;
   }
 }
 
