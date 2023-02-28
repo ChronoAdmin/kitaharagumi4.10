@@ -772,8 +772,9 @@ footer .up {
 }
 
 footer .up a {
-  margin: 0 30px;
+  display: block;
   font-size: 1.5rem;
+  padding: 10px 0;
 }
 
 footer .center {
