@@ -1407,13 +1407,13 @@ SECTION04-----------------------------------------------------------------------
 }
 
 .job-box:nth-child(1) .content {
-  background-image: url(../images/top/insta1.jpg);
+  background-image: url(../images/job/genba.jpg);
 }
 .job-box:nth-child(2) .content {
-  background-image: url(../images/top/insta2.jpg);
+  background-image: url(../images/voice.jpg);
 }
 .job-box:nth-child(3) .content {
-  background-image: url(../images/top/insta3.jpg);
+  background-image: url(../images/job/zimu.jpg);
 }
 
 .job-box .content h2 {
@@ -2291,19 +2291,19 @@ footer .down p {
   }
   .job-card-1080 p:nth-child(1):hover {
     flex: 4;
-    background-image: url(../images/top/insta1.jpg);
+    background-image: url(../images/job/genba.jpg);
     background-size: cover;
     background-position: center;
   }
   .job-card-1080 p:nth-child(2):hover {
     flex: 4;
-    background-image: url(../images/top/insta2.jpg);
+    background-image: url(../images/voice.jpg);
     background-size: cover;
     background-position: center;
   }
   .job-card-1080 p:nth-child(3):hover {
     flex: 4;
-    background-image: url(../images/top/insta3.jpg);
+    background-image: url(../images/job/zimu.jpg);
     background-size: cover;
     background-position: center;
   }
