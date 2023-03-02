@@ -884,6 +884,8 @@ SECTION01 / NEWS----------------------------------------------------------------
   font-size: 20px;
   max-height: 100px;
   overflow-y: scroll;
+
+  /* flex-wrap: wrap; */
 }
 
 .news-label {
@@ -2159,7 +2161,16 @@ footer .down p {
   .header-title {
     top: 45%;
   }
- }
+}
+
+/* news -------------------------------------------------------------------------------------*/
+@media screen and (max-width: 599px) {
+  .news li {
+    flex-wrap: wrap;
+  }
+}
+
+
 
 /* Instagramの画像数 -----------------------------------------------------------------------------------------*/
 
@@ -2291,7 +2302,7 @@ footer .down p {
   
 }
 
-/* スマホ用リンクボタン */
+/* スマホ------------------------------------ */
 @media screen and (max-width: 599px) {
   .left .lists {
     flex-flow: column;
@@ -2313,8 +2324,32 @@ footer .down p {
   .left .txts p {
     line-height: 1.7;
     font-size: 16px;
-    text-align: center;
+    /* text-align: center; */
+    text-align: left;
   }
+
+  /* カンパニーの写真 */
+  .details .right {
+    width: 95%;
+    margin: 0 auto;
+    height: 110px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .hover-text .text1 {
+    font-size: 14px;
+    padding: 0 20px 5px;
+  }
+  .hover-text .text2 {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+  .details .right_image::before,
+.details .right_image::after {
+  height: calc(50% - 30px);
+}
 }
 
 /* Q&A ------------------------------------------------*/
