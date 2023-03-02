@@ -366,8 +366,9 @@ header nav ul li:nth-child(4) a::before {
   }
   #page_title h1 {
     font-size: 3.5rem;
-    left: 70%;
+    left: 60%;
     line-height: 6rem;
+    width: 60%;
   }
   #page_title h1 span {
     display: none;
