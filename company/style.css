@@ -463,57 +463,56 @@ companyメニュー-------------------------------------------------------- */
   position: absolute;
 }
 
-/*一部だけ線の色を変える*/
-.box28 {
-  border: 2px solid #eeeeee;
-  height: auto;
-  margin: 7em auto 2em auto;
-  padding: 2em 2em 10em 2em; /*内側余白*/
-  position: relative;
-  width: 100%;
-  z-index: 0;
-}
-.box28:before {
-  border-left: 2px solid #c6d4c6;
-  border-top: 2px solid #c6d4c6;
-  content: "";
-  display: block;
-  height: 20px;
-  left: -2px;
-  position: absolute;
-  top: -2px;
-  width: 20px;
-  z-index: 1;
-}
-
-#mention p {
-  background-color: #aeb39542;
-  font-size: 1.8rem;
-
-  /* margin: 25px 0; */
-  text-align: center;
-}
-
-#mention .imgs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px;
-
-  gap: 2%;
+#Achievement {
   width: 100%;
 }
+#Achievements {
+  width: 100%;
+  margin-bottom: 40px;
+}
 
-.leftImg {
-  width: auto;
-  max-width: 100%;
-  height: auto;
+.achievement_1 .achieve_imgs {
   max-height: 500px;
+  /* max-width: 500px; */
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: 5%;
+  box-shadow: 0 0 10px #3d6668;
 }
+.achievement_2 .achieve_imgs {
+  max-height: 500px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: 5%;
+  box-shadow: 0 0 10px #3d6668;
+}
+
+#mention #Achievements:nth-child(1) p {
+  background: linear-gradient(135deg, #056164 0%, #4db1b4 99%);
+  box-shadow: 0 0 20px inset #006064;
+  font-size: 1.8rem;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto 0 0;
+  margin-left: 20%;
+  padding: 20px 10px;
+}
+#mention #Achievements:nth-child(2) p {
+  background: linear-gradient(135deg, #4db1b4 0%, #056164 99%);
+  box-shadow: 0 0 20px inset #006064;
+  font-size: 1.8rem;
+  max-width: 600px;
+  /* text-align: center; */
+  margin: 0 0 0 auto;
+  margin-right: 20%;
+  padding: 20px 10px;
+}
+
 .slide {
-  height: 100%;
+  height: 500px;
   overflow: hidden;
   position: relative;
-  width: 100%;
+  max-width: 100%;
 }
 
 @keyframes slideshow {
@@ -553,15 +552,6 @@ companyメニュー-------------------------------------------------------- */
   animation-delay: 16s;
 }
 
-.rightImg {
-  min-width: 350px;
-  width: 100%;
-}
-
-.rightImg img {
-  height: 100%;
-  width: 100%;
-}
 
 /* 
 表彰スライダー ------------------------*/
