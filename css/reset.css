@@ -338,7 +338,38 @@ header nav ul li:nth-child(4) a::before {
   text-align: center;
   z-index: 5;
 }
+#page_title h1 br {
+  display: none;
+}
 
+@media screen and (max-width: 1280px) {
+  #page_title h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #page_title h1 {
+    left: 30%;
+    font-size: 3.8rem;
+  }
+}
+@media screen and (max-width: 730px) {
+  #page_title h1 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  #page_title h1 {
+    left: 50%;
+    line-height: 6rem;
+  }
+  #page_title h1 span {
+    display: none;
+  }
+  #page_title h1 br {
+    display: block;
+  }
+}
 /* 
 サイドバー--------------------------------------------------- */
 
