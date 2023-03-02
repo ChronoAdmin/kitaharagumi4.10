@@ -923,13 +923,16 @@ SECTION01 / NEWS----------------------------------------------------------------
 }
 
 /* 左側の【テキスト】 */
-
+.left .txts {
+  text-align: left;
+  margin-right: auto;
+}
 .left .txts p {
-  /* font-size: calc(16px + (20 - 16) * ((100vw - 1025px) / (1920 - 1025))); */
-  font-size: calc(18px + (20 - 18) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(15px + (19 - 15) * ((100vw - 1025px) / (1920 - 1025)));
   line-height: 1.8;
   transition: all 0.3s;
 }
+
 
 /* 左側の【リスト】 -------------------------------------------------------------------------------- */
 .left .lists {
@@ -937,7 +940,8 @@ SECTION01 / NEWS----------------------------------------------------------------
   /* font-size: 24px; */
   display: flex;
   justify-content: space-around;
-  margin-top: 44px;
+  /* margin-top: 44px; */
+  margin-top: 30px;
 }
 
 .company_list_button {
@@ -1170,6 +1174,7 @@ businessのデザイン---------------------------------------------------------
 #business .left .txts {
   text-align: right;
   margin-left: auto;
+  margin-right: 0;
 }
 
 #business .left {
@@ -2218,6 +2223,7 @@ footer .down p {
   }
 
   
+  
 
   /* カンパニーの写真 */
   .details .right {
@@ -2282,6 +2288,7 @@ footer .down p {
     padding: 0 20px;
   }
   
+  
 }
 
 /* スマホ用リンクボタン */
@@ -2298,6 +2305,15 @@ footer .down p {
   }
   .company_list_button_lg {
     font-size: 15px;
+  }
+
+  .left .txts br {
+    display: none;
+  }
+  .left .txts p {
+    line-height: 1.7;
+    font-size: 16px;
+    text-align: center;
   }
 }
 
@@ -2541,7 +2557,8 @@ footer .down p {
     font-size: 3rem;
   }
   .lorem {
-    font-size: 10px;
+    padding: 20px 10px;
+    font-size: 12px;
   }
 }
 
