@@ -344,23 +344,29 @@ header nav ul li:nth-child(4) a::before {
 
 @media screen and (max-width: 1280px) {
   #page_title h1 {
-    font-size: 4rem;
+    left: 40%;
   }
 }
 @media screen and (max-width: 1024px) {
+  #page_title {
+    min-height: 300px;
+  }
   #page_title h1 {
-    left: 30%;
-    font-size: 3.8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4rem;
+    width: 100%;
   }
 }
-@media screen and (max-width: 730px) {
+
+@media screen and (max-width: 599px) {
+  #page_title {
+    min-height: 200px;
+  }
   #page_title h1 {
     font-size: 3.5rem;
-  }
-}
-@media screen and (max-width: 599px) {
-  #page_title h1 {
-    left: 50%;
+    left: 70%;
     line-height: 6rem;
   }
   #page_title h1 span {
