@@ -515,6 +515,31 @@ companyメニュー-------------------------------------------------------- */
   max-width: 100%;
 }
 
+@media screen and (max-width: 599px) {
+  .slide {
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+  }
+ }
+@media screen and (max-width: 430px) {
+  .slide {
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+  }
+ }
+@media screen and (max-width: 380px) {
+  .slide {
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+  }
+ }
+
 @keyframes slideshow {
   0% {
     opacity: 0;

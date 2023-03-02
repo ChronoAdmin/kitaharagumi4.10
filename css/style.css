@@ -493,6 +493,7 @@ main {
 .container {
   width: 95%;
   transition: all 1s;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -504,13 +505,13 @@ main {
 .bgWrap {
   width: 100%;
   height: auto;
-  clip-path: inset(0);
-  /* will-change: transform; */
-  /* background-image: url(../images/haike-1920x1280.jpg);
-  background-attachment: fixed;
-  background-size: cover; */
+  /* clip-path: inset(0); */
+  background-image: url(../images//background-image-2.png);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.bgWrap::before {
+/* .bgWrap::before {
   content: "";
   display: block;
   position: fixed;
@@ -518,12 +519,12 @@ main {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url(../images/haike-1920x1280.jpg);
+  background-image: url(../images/background-image-2.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-}
+} */
 .bgWrapSecond {
   width: 100%;
   height: auto;
