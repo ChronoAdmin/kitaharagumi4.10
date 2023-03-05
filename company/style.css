@@ -613,7 +613,7 @@ footer .footer-wrap {
 }
 
 footer .up {
-  display: grid;
+  display: flex;
   grid-template-columns: 100px 100px;
   gap: 5%;
   justify-content: center;
