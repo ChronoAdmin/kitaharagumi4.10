@@ -73,38 +73,3 @@ $(".mv video").on("loadedmetadata",function(){
 
 
 
-ScrollReveal().reveal('.text3', { 
-  duration: 1600, 
-  origin: 'left', 
-  distance: '50px',
-  reset: true   
-});
-
-ScrollReveal().reveal('.right01', { 
-  duration: 1600, 
-  delay:1000,
-  origin: 'right', 
-  distance: '50px',
-  reset: true   
-});
-ScrollReveal().reveal('.right02', { 
-  duration: 1600, 
-  delay:1200,
-  origin: 'right', 
-  distance: '50px',
-  reset: true   
-});
-ScrollReveal().reveal('.right03', { 
-  duration: 1600, 
-  delay:1400,
-  origin: 'right', 
-  distance: '50px',
-  reset: true   
-});
-
-ScrollReveal().reveal('.text5', { 
-  duration: 1600, 
-  origin: 'top', 
-  distance: '50px',
-  reset: true   
-});

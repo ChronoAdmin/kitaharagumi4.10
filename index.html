@@ -15,6 +15,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>株式会社北原組</title>
   </head>
   <body ontouchstart="">
@@ -133,7 +135,11 @@
               </div>
             </li>
             <li><a href="/#sns_contents">SNS</a></li>
-            <li><a href="/#contact_section"><button type="button">Contact</button></a></li>
+            <li>
+              <a href="/#contact_section"
+                ><button type="button">Contact</button></a
+              >
+            </li>
           </ul>
         </nav>
         <div class="header-title">
@@ -214,10 +220,10 @@
             <!-- News / Instagram -->
             <section id="sec1" class="">
               <div class="inner">
-                <p class="sectitle">NEWS</p>
+                <p class="sectitle top0_title">NEWS</p>
                 <div class="sec1_contents">
                   <!-- News -->
-                  <div class="news text4">
+                  <div class="news left1000">
                     <ul>
                       <li>
                         <div class="day">2019.1.1</div>
@@ -240,10 +246,10 @@
                     </ul>
                   </div>
                   <!-- Instagram -->
-                  <p class="sectitle">INSTAGRAM</p>
+                  <p class="sectitle top0_title">INSTAGRAM</p>
                   <div id="sns_contents">
                     <div class="insta_images">
-                      <div class="insta_card right01">
+                      <div class="insta_card right0">
                         <div class="card-image" id="image1"></div>
                         <div class="category">
                           2021/11/25<i
@@ -267,7 +273,7 @@
                           More
                         </button>
                       </div>
-                      <div class="insta_card right02">
+                      <div class="insta_card right1000">
                         <div class="card-image" id="image2"></div>
                         <div class="category">
                           2023/01/7<i
@@ -291,7 +297,7 @@
                           More
                         </button>
                       </div>
-                      <div class="insta_card right03">
+                      <div class="insta_card right1500">
                         <div class="card-image" id="image3"></div>
                         <div class="category">
                           2023/01/16<i
@@ -323,22 +329,10 @@
             <!-- Company -->
             <section id="company" class="">
               <div class="inner">
-                <h2 class="section_title">Company</h2>
+                <h2 class="section_title left1000_title">Company</h2>
                 <div class="details">
-                  <div class="left">
+                  <div class="left top1000">
                     <div class="txts">
-                      <!-- <p>
-                        『働いてくれる人がいるから会社はある』という経営理念を掲げる北原組。
-                      </p>
-                      <p>
-                        近年は環境問題を真剣に考え、「エコアクション２１」も取得しました。
-                      </p>
-                      <p>
-                        また、若い子育て世代の作業環境にも目を向け、「社員の子育て応援宣言」にも参加しています。
-                      </p>
-                      <p>
-                        そんな北原組の会社概要や、社長からのメッセージをご紹介します。
-                      </p> -->
                       <p>
                         『働いてくれる人がいるから会社はある』という経営理念を掲げる北原組。<br />
                         近年は環境問題を真剣に考え、「エコアクション２１」も取得しました。<br />
@@ -376,7 +370,7 @@
                       </button>
                     </div>
                   </div>
-                  <div class="right">
+                  <div class="right top1500">
                     <div class="right_image">
                       <img
                         src="./images/com/EA21認証・登録10年継続.JPG"
@@ -414,9 +408,9 @@
             <!-- Business -->
             <section id="business">
               <div class="inner">
-                <h2 class="section_title">Business</h2>
+                <h2 class="section_title right1000_title">Business</h2>
                 <div class="details">
-                  <div class="left">
+                  <div class="left top1000">
                     <div class="txts">
                       <!-- <p>
                         近年の代表的な施工事例や取り組みについてご紹介するページです。
@@ -465,7 +459,7 @@
                       </button>
                     </div>
                   </div>
-                  <div class="right">
+                  <div class="right top1500">
                     <div class="right_image">
                       <img src="./images/example.png" alt="" />
                       <div class="hover-text">
@@ -861,8 +855,11 @@
         }, timeout);
       };
     </script>
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+
+    </script>
     <script src="./js/script.js"></script>
     <script src="/js/slide.js"></script>
+    <script src="./js/fade.js"></script>
   </body>
 </html>
