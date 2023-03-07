@@ -152,3 +152,8 @@ ScrollReveal().reveal(".left0", {
     
   });
 
+  ScrollReveal().reveal('.scale', { 
+    duration: 1600, 
+    delay: 500,
+    scale: 0.5,
+  });

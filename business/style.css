@@ -200,6 +200,8 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+  box-shadow: 2px 2px 15px var(--mainColor);
+
 }
 .box1::after {
   content: "";
@@ -227,8 +229,7 @@
   animation: anime 30s 0s infinite;
   z-index: 0;
   opacity: 0;
-  border: 10px solid #0ecaa8;
-  box-shadow: 5 5 10px #999;
+
 }
 /* 画像の指定  */
 .box1 .image1 {
@@ -285,6 +286,7 @@
   overflow: hidden;
   margin-left: auto;
   margin-bottom: 30px;
+  box-shadow: 2px 2px 15px var(--mainColor);
 }
 .box2::after {
   content: "";
@@ -331,6 +333,7 @@
   height: 600px;
   position: relative;
   overflow: hidden;
+  box-shadow: 2px 2px 15px var(--mainColor);
 }
 .box3::after {
   content: "";

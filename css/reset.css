@@ -27,6 +27,10 @@ body {
   min-width: 350px;
 }
 
+.none {
+  opacity: 0;
+}
+
 li {
   list-style: none;
 }
