@@ -495,7 +495,8 @@
           <div class="null">
             <div class="nullTxt">
               <p>
-                <span class="orange omoji">ふ</span>るさとを<br /><span class="omoji"
+                <span class="orange omoji">ふ</span>るさとを<br /><span
+                  class="omoji"
                   >未来</span
                 >へつなぐ<br /><span class="omoji">建設業</span>の<span
                   class="omoji"
@@ -506,21 +507,21 @@
           </div>
 
           <section id="jobinfo" class="">
-            <h2 class="section_line_title">採用情報</h2>
+            <h2 class="section_line_title top0_title">採用情報</h2>
             <div class="job-boxs">
-              <div class="job-box">
+              <div class="job-box left1000">
                 <span></span>
                 <a href="/job-info/#offer" class="content">
                   <h2>採用情報</h2>
                 </a>
               </div>
-              <div class="job-box">
+              <div class="job-box top1000">
                 <span></span>
                 <a href="/job-info/#voice" class="content">
                   <h2>社員の声</h2>
                 </a>
               </div>
-              <div class="job-box">
+              <div class="job-box right1000">
                 <span></span>
                 <a href="/job-info/#form" class="content">
                   <h2>エントリーフォーム</h2>
@@ -529,9 +530,9 @@
             </div>
             <div class="job-card-1080-wrap">
               <div class="job-card-1080">
-                <p><span>採用情報</span></p>
-                <p><span>社員の声</span></p>
-                <p><span>エントリーフォーム</span></p>
+                <p><span class="left1000">採用情報</span></p>
+                <p><span class="top1000">社員の声</span></p>
+                <p><span class="right1000">エントリーフォーム</span></p>
               </div>
             </div>
           </section>
@@ -654,12 +655,12 @@
           <div class="bgWrapSecond">
             <section id="contact_section">
               <div class="inner" id="contact">
-                <h2 class="section_line_title">お問い合わせ</h2>
-                <p class="lorem">
+                <h2 class="section_line_title top0_title">お問い合わせ</h2>
+                <p class="lorem top1000">
                   質問・お問い合わせは「お電話」又は<br />下記の「お問合せフォーム」でお気軽にお問い合わせ下さい。
                 </p>
                 <div class="tel">
-                  <div class="telbox">
+                  <div class="telbox left0">
                     <div class="box">
                       <p class="left">お電話でのお問い合わせ</p>
                       <div class="right">
@@ -668,11 +669,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class="img">
+                  <div class="img right0">
                     <img src="/images/top/g0254 1.png" alt="" />
                   </div>
                 </div>
-                <div class="entryForm">
+                <div class="entryForm fade0">
                   <form action="">
                     <div class="row">
                       <div class="input-group">
@@ -764,12 +765,12 @@
             </section>
             <section id="sec5">
               <div class="inner">
-                <h2 class="section_line_title">よくある質問</h2>
+                <h2 class="section_line_title top0_title">よくある質問</h2>
                 <div class="contents">
-                  <div class="img-left">
+                  <div class="img-left left1000">
                     <img src="/images/top/g0854 1.png" alt="" />
                   </div>
-                  <div class="questionBox">
+                  <div class="questionBox top0">
                     <div class="cp_qa">
                       <div class="cp_actab">
                         <input id="cp_tabfour021" type="checkbox" name="tabs" />
@@ -803,11 +804,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class="img-right">
+                  <div class="img-right right1500">
                     <img src="/images/top/g0949 1.png" alt="" />
                   </div>
                 </div>
-                <div class="map">
+                <div class="map top0">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10229.059768176114!2d138.4730955592556!3d36.09811373202488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c3a049270019d%3A0x3723bd6e28a66102!2z77yI5qCq77yJ5YyX5Y6f57WE!5e0!3m2!1sja!2sjp!4v1671239176476!5m2!1sja!2sjp"
                     style="border: 0"
@@ -846,16 +847,24 @@
     </div>
 
     <script>
-      window.onload = function () {
-        const timeout = 3000;
-        setTimeout(() => {
-          const loader = document.querySelector(".loading");
-          loader.classList.add("loaded");
-        }, timeout);
-      };
-    </script>
-    <script>
-
+      const referrer = document.referrer;
+      const urlList = ["http://192.168.2.157:5502/","http://192.168.2.157:5502/company/","http://192.168.2.157:5502/business/","http://192.168.2.157:5502/job-info/"];
+      const loading = document.querySelector(".loading")
+      urlList.forEach(function (url) {
+        if (url !== referrer) {
+          console.log(referrer);
+          window.onload = function () {
+            const timeout = 3000;
+            setTimeout(() => {
+              const loader = document.querySelector(".loading");
+              loader.classList.add("loaded");
+            }, timeout);
+          };
+        }
+        else {
+          loading.classList.add("loaded")
+        }
+      });
     </script>
     <script src="./js/script.js"></script>
     <script src="/js/slide.js"></script>
