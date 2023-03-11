@@ -19,19 +19,31 @@ toggle.addEventListener("click", () => {
 //scroll_effect Start--------------------------------------------------------------------------------------------------------------------------------------------------------------
 window.addEventListener('scroll', function(){
   const headerH1 = document.querySelector(".header-title")
-  const headerNav = document.querySelector("#header-nav")
-  console.log(this.window.scrollY)
-  if (window.scrollY > 500) {
-    headerH1.classList.add("none")
+  const headerNav = document.getElementById("header-nav")
+  if ( headerH1 === null) {
+    if (window.scrollY > 250) {
+      headerNav.classList.add("none")
+    }
+    else if (window.scrollY < 250) {
+      headerNav.classList.remove("none")
+    }
+    console.log("h1が存在しません")
   }
-  else if (window.scrollY < 500) {
-    headerH1.classList.remove("none")
-  }
-  if (window.scrollY > 900) {
-    headerNav.classList.add("none")
-  }
-  else if (window.scrollY < 900) {
-    headerNav.classList.remove("none")
+  else{
+    console.log("h1が存在します")
+
+    if (window.scrollY > 500) {
+      headerH1.classList.add("none")
+    }
+    else if (window.scrollY < 500) {
+      headerH1.classList.remove("none")
+    }
+    if (window.scrollY > 800) {
+      headerNav.classList.add("none")
+    }
+    else if (window.scrollY < 800) {
+      headerNav.classList.remove("none")
+    }
   }
 });
 

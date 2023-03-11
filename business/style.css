@@ -81,6 +81,18 @@
   /* 変化後のスタイル。横サイズを0から100%に変えることで指定の文字列に下線を引く */
 }
 
+/* header-nav ------------------------------------------------*/
+header nav ul li:nth-child(3) a {
+  color: var(--mainColor);
+}
+header nav ul li:nth-child(1) a,
+header nav ul li:nth-child(2) a,
+header nav ul li:nth-child(4) a,
+header nav ul li:nth-child(5) a {
+  color: #101010;
+}
+
+
 /* 
   companyメニュー-------------------------------------------------------- */
 
