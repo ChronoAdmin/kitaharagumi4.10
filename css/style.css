@@ -75,6 +75,13 @@ button {
   transform: translateX(-50%);
   transition: 0.5s;
   width: 100%;
+  box-shadow: 0px 10px 10px #807f7f86;
+}
+
+@media screen and (max-width: 1024px) { 
+  #header-nav {
+    z-index: 9999;
+  }
 }
 
 .logo {
@@ -934,6 +941,7 @@ SECTION01 / NEWS----------------------------------------------------------------
 
   /* height: 500px; */
   width: 60%;
+  min-width: 50%;
 }
 
 /* 左側の【テキスト】 */
@@ -2127,7 +2135,6 @@ footer .down p {
     transform: translateY(0);
   }
   #header-nav ul li a {
-    color: #4d4d4d;
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
@@ -2789,6 +2796,17 @@ footer .down p {
 }
 
 
-.none {
+#header-nav.none {
   opacity: 0;
 }
+
+.header-title.none {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #header-nav.none {
+    opacity: 1;
+    z-index: 9999;
+  }
+ }
