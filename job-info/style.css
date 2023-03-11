@@ -458,7 +458,7 @@ img {
 .underline-Area {
   align-items: center;
   display: flex;
-  font-size: calc(20px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(17px + (30 - 18) * ((100vw - 1025px) / (1920 - 1025)));
   justify-content: center;
   text-align: center;
 }
@@ -466,7 +466,7 @@ img {
 .declaration {
   display: grid;
   gap: 2%;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.75fr;
   margin-top: 80px;
   overflow: hidden;
   width: 100%;
@@ -1156,6 +1156,9 @@ footer .down p {
     margin-top: 0px;
     overflow: hidden;
     width: 100%;
+  }
+  .underline-Area {
+    font-size: 16px;
   }
 }
 
