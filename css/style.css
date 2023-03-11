@@ -87,7 +87,7 @@ button {
 
 .logo h1 {
   color: #4d4d4d;
-  font-family: "HG行書体", monospace;
+  font-family: -apple-system,"HG行書体", monospace;
   margin-left: 15px;
 }
 
@@ -934,6 +934,7 @@ SECTION01 / NEWS----------------------------------------------------------------
 
   /* height: 500px; */
   width: 60%;
+  min-width: 50%;
 }
 
 /* 左側の【テキスト】 */
