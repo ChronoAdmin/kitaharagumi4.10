@@ -938,13 +938,24 @@ SECTION01 / NEWS----------------------------------------------------------------
 
 /* 左側の【テキスト】 */
 .left .txts {
-  margin-right: auto;
+  width: 100%;
+  /* margin-right: auto; */
   text-align: left;
 }
 .left .txts p {
-  font-size: calc(15px + (19 - 15) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(15px + (19 - 15) * ((100vw - 1281px) / (1920 - 1281)));
   line-height: 1.8;
   transition: all 0.3s;
+  padding: 0 8%;
+}
+.left .txts .tx_right {
+  text-align: right;
+}
+.left .txts .tx_center {
+  text-align: center;
+  margin-top: 5px;
+  padding: 3%;
+  font-size: calc(13px + (19 - 13) * ((100vw - 1281px) / (1920 - 1281)));
 }
 
 /* 左側の【リスト】 -------------------------------------------------------------------------------- */
@@ -1089,6 +1100,10 @@ SECTION01 / NEWS----------------------------------------------------------------
   min-width: 300px;
   position: relative;
   width: 30%;
+}
+
+#business .left .txts p {
+  padding: 0;
 }
 
 .details .right_image::before,
@@ -2253,6 +2268,13 @@ footer .down p {
     width: 90%;
   }
 
+  .left .txts p {
+    font-size: calc(15px + (22 - 15) * ((100vw - 1025px) / (1280 - 1025)));
+  }
+  .left .txts .tx_center {
+    font-size: calc(15px + (22 - 15) * ((100vw - 1025px) / (1280 - 1025)));
+  }
+
   .left .lists {
     width: 100%;
   }
@@ -2298,6 +2320,19 @@ footer .down p {
   .company_list_button_lg {
     font-size: calc(6px + (13 - 6) * ((100vw - 320px) / (599 - 320)));
   }
+
+  .left .txts p {
+    font-size: calc(15px + (22 - 15) * ((100vw - 600px) / (1024 - 600)));
+    line-height: 1.8;
+    transition: all 0.3s;
+    padding: 0 8%;
+  }
+  .left .txts .tx_center {
+    text-align: center;
+    margin-top: 5px;
+    padding: 3%;
+    font-size: calc(13.9px + (22 - 13.9) * ((100vw - 600px) / (1024 - 600)));
+  }
 }
 @media screen and (max-width: 730px) {
   /* カンパニーの写真 */
@@ -2335,16 +2370,30 @@ footer .down p {
     font-size: 15px;
   }
 
+  .left .txts p {
+    font-size: calc(11.9px + (14 - 11.9) * ((100vw - 320px) / (600 - 320)));
+    line-height: 1.8;
+    transition: all 0.3s;
+    padding: 0;
+  }
+  .left .txts .tx_center {
+    text-align: center;
+    margin-top: 5px;
+    padding: 0%;
+    font-size: calc(13px + (14 - 13) * ((100vw - 600px) / (1024 - 600)));
+  }
+
   .left .txts br {
     display: none;
   }
-  .left .txts p {
-    font-size: 16px;
-    line-height: 1.7;
-
-    /* text-align: center; */
+  #business .left .txts p {
     text-align: left;
   }
+  /* .left .txts p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+  } */
 
   /* カンパニーの写真 */
   .details .right {
