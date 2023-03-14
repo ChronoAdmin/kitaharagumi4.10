@@ -407,7 +407,6 @@ header nav ul li:nth-child(4) a::before {
 サイドバー--------------------------------------------------- */
 
 #colnav {
-  width: 300px;
   position: relative;
   z-index: 2;
   transition: 0.3s;
@@ -419,18 +418,27 @@ header nav ul li:nth-child(4) a::before {
   }
 }
 
-#colnav.close {
+#colnav {
   width: 5%;
   min-width: 100px;
 }
-
-.text {
-  transition: 0.1s;
+#colnav:hover {
+  width: 300px;
 }
 
-#colnav.close .text {
+.text {
+  font-size: calc(13px + (25 - 13) * ((100vw - 320px) / (1920 - 320)));
+}
+
+#colnav .text {
   opacity: 0;
   pointer-events: none;
+  transition: .5s;
+}
+
+#colnav:hover .text {
+  opacity: 1;
+  color: #fff;
 }
 
 .sidebar {
