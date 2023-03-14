@@ -1529,7 +1529,9 @@ SECTION04-----------------------------------------------------------------------
 
 .telbox .left {
   color: white;
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
+  font-size: calc(23px + (30 - 23) * ((100vw - 1427px) / (1920 - 1427)));
+
 }
 .telbox .right {
   background-color: white;
@@ -1540,7 +1542,8 @@ SECTION04-----------------------------------------------------------------------
   border-bottom: 1px solid #000000;
   color: #008afc;
   display: block;
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: calc(35px + (40 - 35) * ((100vw - 1427px) / (1920 - 1427)));
   text-align: center;
 }
 .telbox .right p:nth-child(2) {
@@ -2628,11 +2631,15 @@ footer .down p {
   /* (~1427px) ------------*/
   .telbox .left {
     font-size: 3rem;
+    font-size: calc(27px + (33 - 27) * ((100vw - 1024px) / (1426 - 1024)));
   }
   .telbox .right {
     background-color: white;
     padding: 25px;
     width: 50%;
+  }
+  .telbox .right a {
+    font-size: calc(35px + (40 - 35) * ((100vw - 1024px) / (1426 - 1024)));
   }
   .telbox .right p:nth-child(1) {
     border-bottom: 1px solid #000000;
@@ -2653,7 +2660,11 @@ footer .down p {
 
 @media screen and (max-width: 1024px) {
   .telbox .left {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+    font-size: calc(22px + (30 - 22) * ((100vw - 600px) / (1024 - 600)));
+  }
+  .telbox .right a {
+    font-size: calc(33px + (40 - 33) * ((100vw - 600px) / (1024 - 600)));
   }
 }
 
@@ -2662,7 +2673,8 @@ footer .down p {
     display: block;
   }
   .box .left {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (600 - 320)));
     margin-bottom: 20px;
     text-align: center;
     width: 100%;
@@ -2671,7 +2683,8 @@ footer .down p {
     width: 100%;
   }
   .box .right a {
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    font-size: calc(33px + (40 - 33) * ((100vw - 320px) / (600 - 320)));
   }
   .lorem {
     font-size: 12px;
@@ -2858,4 +2871,4 @@ footer .down p {
     opacity: 1;
     z-index: 9999;
   }
- }
+}
