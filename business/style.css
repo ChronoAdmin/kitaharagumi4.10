@@ -29,7 +29,7 @@
 }
 
 .secTitle {
-  font-size: calc(36px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(40px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
   position: relative;
   border-top: solid 1px #898484;
   padding-top: 0;
@@ -846,8 +846,11 @@ footer .down p {
     width: 94%;
     margin: 0 auto;
   }
+  #works {
+    margin-top: 20px;
+  }
   .secTitle{
-    margin-top: 50px;
+    margin-top: 10px;
   }
   .subTitle {
     width: 80%;
@@ -856,7 +859,7 @@ footer .down p {
 
 @media screen and (max-width: 600px) {
   .secTitle{
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .subTitle {
     width: 94%;
