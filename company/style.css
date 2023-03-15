@@ -45,7 +45,7 @@
 
 .secTitle {
   border-top: solid 1px #898484;
-  font-size: 4.5rem;
+  font-size: calc(40px + (30 - 20) * ((100vw - 1025px) / (1920 - 1025)));
   margin-bottom: 80px;
   padding-top: 0;
   position: relative;
@@ -708,7 +708,8 @@ footer .down p {
 @media screen and (max-width: 1024px) {
   .inner {
     margin: 0 auto;
-    padding: 100px 0;
+    padding-top: 25px;
+    padding-bottom: 70px;
     width: 94%;
   }
 }
@@ -761,6 +762,8 @@ footer .down p {
     display: block;
     font-size: 2.75rem;
     text-align: center;
+    width: 100%;
+    letter-spacing: -1.2px;
   }
   .msg__title p:nth-child(1) {
     order: 2;
@@ -790,7 +793,8 @@ footer .down p {
   }
 
   .msg__right .open .msg__text p {
-    text-align: center;
+    /* text-align: center; */
+    letter-spacing: -0.05rem;
   }
   .msg__right .open {
     height: 300px;
