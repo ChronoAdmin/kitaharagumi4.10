@@ -35,7 +35,7 @@ body {
 @media screen and (max-width: 1024px) { 
   .none {
     opacity: 1 !important;
-    z-index: 9999;
+    z-index: 9999; 
   }
 }
 
