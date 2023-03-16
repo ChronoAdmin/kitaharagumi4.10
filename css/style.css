@@ -926,6 +926,22 @@ SECTION01 / NEWS----------------------------------------------------------------
 }
 
 /* カンパニー -----------------------------------------------------------------------------------------*/
+#company .section_line_title::before {
+  color: #00c09da0;
+  content: "company";
+  filter: blur(1px);
+  font-weight: 800;
+  /* right: 30%; */
+  left: 50%;
+  opacity: 0.3;
+  position: absolute;
+  text-shadow: 10px 10px 10px rgb(111, 111, 111);
+  top: 0;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
 .details {
   align-items: center;
   display: flex;
@@ -1196,6 +1212,23 @@ SECTION01 / NEWS----------------------------------------------------------------
 
 /* 
 businessのデザイン------------------------------------------------------------- */
+#business .section_line_title::before {
+  color: #00c09da0;
+  content: "business";
+  filter: blur(1px);
+  font-weight: 800;
+  /* right: 30%; */
+  left: 50%;
+  opacity: 0.3;
+  position: absolute;
+  text-shadow: 10px 10px 10px rgb(111, 111, 111);
+  top: 0;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+
 #business .details {
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -1399,7 +1432,6 @@ SECTION04-----------------------------------------------------------------------
   content: "Job-Info";
   filter: blur(1px);
   font-weight: 800;
-
   /* right: 30%; */
   left: 50%;
   opacity: 0.3;
@@ -1408,8 +1440,6 @@ SECTION04-----------------------------------------------------------------------
   top: 0;
   top: 0;
   transform: translateX(-50%);
-
-  /* font-size: 11rem; */
   z-index: 0;
 }
 
@@ -2025,6 +2055,12 @@ footer .down p {
 
 /* 共通 ------------------------------------------------*/
 @media screen and (max-width: 1920px) {
+  #company .section_line_title::before {
+    font-size: calc(120px + (130 - 120) * ((100vw - 1920px) / (1920 - 1025)));
+  }
+  #business .section_line_title::before {
+    font-size: calc(120px + (130 - 120) * ((100vw - 1920px) / (1920 - 1025)));
+  }
   #jobinfo .section_line_title::before {
     font-size: calc(120px + (130 - 120) * ((100vw - 1920px) / (1920 - 1025)));
   }
@@ -2052,6 +2088,14 @@ footer .down p {
     padding-bottom: 0;
     padding-top: 80px;
   }
+  #company .section_line_title::before {
+    font-size: calc(100px + (120 - 100) * ((100vw - 1024px) / (1024 - 600)));
+    width: 100%;
+  }
+  #business .section_line_title::before {
+    font-size: calc(100px + (120 - 100) * ((100vw - 1024px) / (1024 - 600)));
+    width: 100%;
+  }
   #jobinfo .section_line_title::before {
     font-size: calc(100px + (120 - 100) * ((100vw - 1024px) / (1024 - 600)));
     top: 30%;
@@ -2077,6 +2121,14 @@ footer .down p {
   }
   .section_line_title {
     font-size: calc(35px + (55 - 35) * ((100vw - 320px) / (599 - 320)));
+  }
+  #company .section_line_title::before {
+    font-size: calc(70px + (90 - 70) * ((100vw - 320px) / (599 - 320)));
+    top: 10%;
+  }
+  #business .section_line_title::before {
+    font-size: calc(70px + (90 - 70) * ((100vw - 320px) / (599 - 320)));
+    top: 10%;
   }
   #jobinfo .section_line_title::before {
     font-size: calc(70px + (90 - 70) * ((100vw - 320px) / (599 - 320)));
