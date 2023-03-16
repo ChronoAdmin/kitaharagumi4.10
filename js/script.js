@@ -1,9 +1,4 @@
-const nav = document.querySelector("#colnav"),
-  toggle = document.querySelector(".toggle");
 
-toggle.addEventListener("click", () => {
-  nav.classList.toggle("close");
-});
 
 
 
