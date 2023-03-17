@@ -180,6 +180,48 @@ header nav ul li:nth-child(5) a {
 /* 
   施工事例-------------------------------------------- */
 
+/* s-slider -----------------------------------------------------------*/
+.s-swipe-wrap {
+  width: 87%;
+  height: 40vw;
+  /* padding-bottom: 100%; */
+  position: relative;
+  overflow: hidden;
+  /* margin: 0 auto; */
+  margin-top: 5vw;
+  box-shadow: 2px 2px 15px var(--mainColor);
+}
+#s-swipe-right {
+  margin-left: auto;
+}
+
+#s-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#s-swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+#s-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+#s-swiper .swiper-pagination-bullet {
+  background-color:var(--mainColor);
+}
+
+#s-swiper .swiper-button-next, #s-swiper .swiper-button-prev {
+  color: var(--mainColor);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.171);
+  width: 60px;
+  height: 60px;
+}
+
 #works {
   width: 100%;
   margin: 100px 0;
@@ -205,186 +247,6 @@ header nav ul li:nth-child(5) a {
 
 /* 施工事例----------------------------- */
 
-/* 道路工事---------------- */
-.box1 {
-  width: 80%;
-  height: 600px;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 30px;
-  box-shadow: 2px 2px 15px var(--mainColor);
-
-}
-.box1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 49;
-}
-
-.image1,
-.image2,
-.image3,
-.image4,
-.image5,
-.image6,
-.image7 {
-  width: 100%;
-  height: 600px;
-  position: absolute;
-  top: 0;
-  background: center center no-repeat;
-  background-size: cover;
-  animation: anime 30s 0s infinite;
-  z-index: 0;
-  opacity: 0;
-
-}
-/* 画像の指定  */
-.box1 .image1 {
-  background-image: url(/images/bus/工事/道路・河川/道路河川1.png);
-}
-.box1 .image2 {
-  background-image: url(/images/bus/工事/道路・河川/道路河川2.png);
-  animation-delay: 5s;
-}
-.box1 .image3 {
-  background-image: url(/images/bus/工事/道路・河川/道路河川3.png);
-  animation-delay: 10s;
-}
-.box1 .image4 {
-  background-image: url(/images/bus/工事/道路・河川/道路河川4.png);
-  animation-delay: 15s;
-}
-.box1 .image5 {
-  background-image: url(/images/bus/工事/道路・河川/道路河川5.png);
-  animation-delay: 20s;
-}
-.box1 .image6 {
-  background-image: url(/images/bus/工事/道路・河川/道路河川6.png);
-  animation-delay: 25s;
-}
-.box1 .image7 {
-  background-image: url(/images/bus/工事/道路・河川/道路河川7.png);
-  animation-delay: 30s;
-}
-@keyframes anime {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  35% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-    z-index: 9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/* 治山林道---------------- */
-.box2 {
-  width: 80%;
-  height: 600px;
-  position: relative;
-  overflow: hidden;
-  margin-left: auto;
-  margin-bottom: 30px;
-  box-shadow: 2px 2px 15px var(--mainColor);
-}
-.box2::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 49;
-}
-
-/* 画像の指定  */
-.box2 .image1 {
-  background-image: url(/images/bus/工事/治山・林道/治山林道1.png);
-}
-.box2 .image2 {
-  background-image: url(/images/bus/工事/治山・林道/治山林道2.png);
-  animation-delay: 5s;
-}
-.box2 .image3 {
-  background-image: url(/images/bus/工事/治山・林道/治山林道3.png);
-  animation-delay: 10s;
-}
-.box2 .image4 {
-  background-image: url(/images/bus/工事/治山・林道/治山林道4.png);
-  animation-delay: 15s;
-}
-.box2 .image5 {
-  background-image: url(/images/bus/工事/治山・林道/治山林道5.png);
-  animation-delay: 20s;
-}
-.box2 .image6 {
-  background-image: url(/images/bus/工事/治山・林道/治山林道6.png);
-  animation-delay: 25s;
-}
-.box2 .image7 {
-  background-image: url(/images/bus/工事/治山・林道/治山林道7.png);
-  animation-delay: 30s;
-}
-
-/* その他---------------- */
-.box3 {
-  width: 80%;
-  height: 600px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 2px 2px 15px var(--mainColor);
-}
-.box3::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 49;
-}
-
-/* 画像の指定  */
-.box3 .image1 {
-  background-image: url(/images/bus/工事/民間その他/民間その他1.png);
-}
-.box3 .image2 {
-  background-image: url(/images/bus/工事/民間その他/民間その他2.png);
-  animation-delay: 5s;
-}
-.box3 .image3 {
-  background-image: url(/images/bus/工事/民間その他/民間その他3.png);
-  animation-delay: 10s;
-}
-.box3 .image4 {
-  background-image: url(/images/bus/工事/民間その他/民間その他4.png);
-  animation-delay: 15s;
-}
-.box3 .image5 {
-  background-image: url(/images/bus/工事/民間その他/民間その他1.png);
-  animation-delay: 20s;
-}
-.box3 .image6 {
-  background-image: url(/images/bus/工事/民間その他/民間その他3.png);
-  animation-delay: 25s;
-}
-.box3 .image7 {
-  background-image: url(/images/bus/工事/民間その他/民間その他4.png);
-  animation-delay: 30s;
-}
 
 /*
 登録・認可---------------------------------------------------  */
@@ -890,66 +752,28 @@ footer .down p {
   }
 }
 
-@media screen and (max-width: 1380px) {
-  .box1,
-  .box2,
-  .box3 {
-    height: 400px;
-  }
-  .image1,
-  .image2,
-  .image3,
-  .image4,
-  .image5,
-  .image6,
-  .image7 {
-    height: 400px;
-  }
-}
-
+/* s-swiper -----------------------------------------------------------*/
 @media screen and (max-width: 1024px) {
-  .box1,
-  .box2,
-  .box3 {
-    height: 330px;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  #s-swiper .swiper-pagination {
+      width: auto;
+      left: 2%;
+      bottom: 2%;
+    }
+    .s-swipe-wrap {
+      width: 90%;
+    }
   }
-
-  .image1,
-  .image2,
-  .image3,
-  .image4,
-  .image5,
-  .image6,
-  .image7 {
-    height: 330px;
-  }
-}
 
 @media screen and (max-width: 599px) {
-  #works {
-    margin-bottom: 10px;
+  #works .secTitle{
+    margin-bottom: 10%;
   }
-  .box1,
-  .box2,
-  .box3 {
-    height: 200px;
-    width: 80%;
+  .s-swipe-wrap {
+    width: 90%;
+    height: 50vw;
     margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
-  .image1,
-  .image2,
-  .image3,
-  .image4,
-  .image5,
-  .image6,
-  .image7 {
-    height: 200px;
-    border: none;
+    margin-top: 5vw;
+    box-shadow: none;
   }
 }
 

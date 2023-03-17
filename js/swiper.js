@@ -1,7 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     breakpoints: {
-      // 768px以上の場合
       300: {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -30,4 +29,22 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+  })
+
+
+  var swiper2 = new Swiper(".s-mySwiper", {
+    effect: "fade",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop:true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
