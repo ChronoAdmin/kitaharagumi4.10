@@ -83,7 +83,7 @@ main {
   transform: translateX(-50%);
   display: grid;
   gap: 2%;
-  grid-template-columns: 30% 1fr;
+  grid-template-columns: 35% 1fr;
   width: 100%;
   background-color: #fff;
   transition: 0.5s;
@@ -102,19 +102,23 @@ main {
   color: #fff;
   font-size: 2rem;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
-.logo h1 {
+/* .logo h1 {
   margin-left: 15px;
   font-family: "HG行書体", monospace;
   color: #4d4d4d;
+} */
+.header-logo {
+  margin-left: 5%;
+  width: auto;
+  height: 45px;
 }
-
-.logo_img {
+.header-text {
+  width: auto;
   height: 55px;
-  width: 55px;
 }
 
 #header-nav ul {
@@ -702,7 +706,7 @@ header nav ul li:nth-child(4) a::before {
   .header-pull-title p {
     font-size: 1.5rem;
   }
-  .header-title {
+  /* .header-title {
     line-height: 1.5;
   }
   .header-title p:first-child {
@@ -710,7 +714,7 @@ header nav ul li:nth-child(4) a::before {
   }
   .header-title p:last-child {
     font-size: calc(18px + (22 - 18) * ((100vw - 600px) / (1024 - 600)));
-  }
+  } */
 }
 
 @media screen and (max-width: 730px) {
@@ -781,17 +785,23 @@ header nav ul li:nth-child(4) a::before {
   #header-nav ul li a {
     font-size: calc(13px + (20 - 13) * ((100vw - 320px) / (730 - 320)));
   }
-  .header-title {
-    top: 37%;
+  .header-logo {
+    height: 35px;
+    top: 35%;
+  }
+  .header-text {
+    height: 40px;
+    top: 35%;
   }
 }
 
 @media screen and (max-width: 460px) {
-  .logo_img {
-    height: 35px;
-    width: 35px;
+  .header-logo {
+    height: 30px;
+    top: 35%;
   }
-  .header-title {
+  .header-text {
+    height: 35px;
     top: 35%;
   }
 }

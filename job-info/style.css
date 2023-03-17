@@ -679,7 +679,7 @@ header nav ul li:nth-child(5) a {
 }
 
 .vc-items p {
-  font-size: calc(20px + (24 - 18) * ((100vw - 1025px) / (1920 - 1025)));
+  font-size: calc(24px + (28 - 24) * ((100vw - 1025px) / (1920 - 1025)));
   letter-spacing: 1.3px;
   margin-bottom: 20px;
   text-align: left;
@@ -707,6 +707,7 @@ SECTION04-----------------------------------------------------------------------
 #entry .lorem {
   font-size: 18px;
   padding: 50px;
+  letter-spacing: -1.2px;
   text-align: center;
 }
 
@@ -969,7 +970,12 @@ footer .down p {
   font-size: 4rem;
   margin-left: 15px;
 }
-
+footer .logo-img {
+  height: 55px;
+}
+footer .text-img {
+  height: 55px;
+}
 .copy {
   color: #ffffff;
   font-size: 1.5rem;
@@ -1079,10 +1085,6 @@ footer .down p {
     position: absolute;
     top: -10px;
     width: 150px;
-  }
-
-  .card_box:nth-child(1) span::before {
-    
   }
 }
 
@@ -1270,5 +1272,11 @@ footer .down p {
   footer .center ul li {
     padding: 5px;
     font-size: 1.2rem;
+  }
+  footer .logo-img {
+    height: 40px;
+  }
+  footer .text-img {
+    height: 45px;
   }
 }

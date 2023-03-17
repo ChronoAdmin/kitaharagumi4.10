@@ -692,7 +692,12 @@ footer .down p {
   color: #fff;
   font-family: "HG行書体", monospace;
 }
-
+footer .logo-img {
+  height: 55px;
+}
+footer .text-img {
+  height: 55px;
+}
 .copy {
   margin-top: 25px;
   text-align: center;
@@ -935,5 +940,11 @@ footer .down p {
   footer .center ul li {
     padding: 5px;
     font-size: 1.2rem;
+  }
+  footer .logo-img {
+    height: 40px;
+  }
+  footer .text-img {
+    height: 45px;
   }
 }

@@ -67,7 +67,7 @@ button {
   border-top: 25px solid #008665;
   display: grid;
   gap: 2%;
-  grid-template-columns: 30% 1fr;
+  grid-template-columns: 35% 1fr;
   left: 50%;
   padding: 20px 0;
   position: fixed;
@@ -85,22 +85,26 @@ button {
 }
 
 .logo {
-  align-items: center;
+  /* align-items: center; */
   color: #ffffff;
   display: flex;
-  font-size: 2rem;
   justify-content: center;
 }
 
-.logo h1 {
+/* .logo h1 {
   color: #4d4d4d;
   font-family: "HG行書体", monospace;
   margin-left: 15px;
-}
+} */
 
-.logo_img {
+.header-logo {
+  margin-left: 5%;
+  width: auto;
+  height: 45px;
+}
+.header-text {
+  width: auto;
   height: 55px;
-  width: 55px;
 }
 
 #header-nav ul {
@@ -1898,7 +1902,7 @@ footer .footer-wrap {
 }
 
 footer .up {
-  display: grid;
+  display: flex;
   gap: 5%;
   grid-template-columns: 100px 100px;
   justify-content: center;
@@ -1942,13 +1946,12 @@ footer .down {
   margin-top: 100px;
 }
 
-footer .down p {
-  color: #ffffff;
-  font-family: "HG行書体", monospace;
-  font-size: 4rem;
-  margin-left: 15px;
+footer .logo-img {
+  height: 55px;
 }
-
+footer .text-img {
+  height: 55px;
+}
 .copy {
   color: #ffffff;
   font-size: 1.5rem;
@@ -2233,9 +2236,9 @@ footer .down p {
   .hover-menu {
     display: none;
   }
-  .logo h1 {
+  /* .logo h1 {
     font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (730 - 320)));
-  }
+  } */
   #header-nav ul li {
     margin: 0 11px;
   }
@@ -2256,17 +2259,23 @@ footer .down p {
   #header-nav ul li a {
     font-size: calc(13px + (20 - 13) * ((100vw - 320px) / (730 - 320)));
   }
-  .header-title {
-    top: 37%;
+  .header-logo {
+    height: 35px;
+    top: 35%;
+  }
+  .header-text {
+    height: 40px;
+    top: 35%;
   }
 }
 
 @media screen and (max-width: 460px) {
-  .logo_img {
-    height: 35px;
-    width: 35px;
+  .header-logo {
+    height: 30px;
+    top: 35%;
   }
-  .header-title {
+  .header-text {
+    height: 35px;
     top: 35%;
   }
 }
@@ -2918,6 +2927,12 @@ footer .down p {
   footer .center ul li {
     font-size: 1.2rem;
     padding: 5px;
+  }
+  footer .logo-img {
+    height: 40px;
+  }
+  footer .text-img {
+    height: 45px;
   }
 }
 

@@ -691,7 +691,12 @@ footer .down p {
   font-size: 4rem;
   margin-left: 15px;
 }
-
+footer .logo-img {
+  height: 55px;
+}
+footer .text-img {
+  height: 55px;
+}
 .copy {
   color: #ffffff;
   font-size: 1.5rem;
@@ -1013,8 +1018,7 @@ footer .down p {
     grid-template-rows: 1fr 1fr;
     row-gap: 10%;
   }
-  .rightImg {
-  }
+  
   /* .leftImg {
     height: 500px;
   } */
@@ -1036,5 +1040,11 @@ footer .down p {
   footer .center ul li {
     font-size: 1.2rem;
     padding: 5px;
+  }
+  footer .logo-img {
+    height: 40px;
+  }
+  footer .text-img {
+    height: 45px;
   }
 }
