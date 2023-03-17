@@ -224,6 +224,7 @@ header nav ul li:nth-child(5) a {
   width: 150px;
 }
 
+
 .card_box:nth-child(1) span::before {
   align-items: center;
   background-image: linear-gradient(
@@ -727,7 +728,8 @@ SECTION04-----------------------------------------------------------------------
 
 .telbox .left {
   color: white;
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
+  font-size: calc(24px + (30 - 24) * ((100vw - 1427px) / (1920 - 1427)));
 }
 .telbox .right {
   background-color: white;
@@ -735,11 +737,12 @@ SECTION04-----------------------------------------------------------------------
   width: 50%;
 }
 .telbox .right a {
-  display: block;
   border-bottom: 1px solid #000000;
-  font-size: 4rem;
-  text-align: center;
   color: #008afc;
+  display: block;
+  /* font-size: 4rem; */
+  font-size: calc(30px + (40 - 30) * ((100vw - 1427px) / (1920 - 1427)));
+  text-align: center;
 }
 .telbox .right p:nth-child(2) {
   font-size: 2rem;
@@ -1050,21 +1053,36 @@ footer .down p {
     margin: 50px auto 0 auto;
   }
   .card_box {
-    height: 150px;
+    height: 200px;
     margin: 0 auto;
     margin-bottom: 30px;
     min-width: 300px;
     width: 70%;
   }
-  .card_box span {
+  /* .card_box span {
     display: none;
-  }
+  } */
   .card_box p {
-    padding-top: 0;
+    padding-top: 20px;
   }
   .card_box::before,
   .card_box::after {
-    height: calc(50% - 20px);
+    height: calc(50% - 40px);
+  }
+  .card_box span {
+    align-items: center;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    left: -10px;
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    width: 150px;
+  }
+
+  .card_box:nth-child(1) span::before {
+    
   }
 }
 
@@ -1142,6 +1160,72 @@ footer .down p {
 }
 
 /* エントリーフォーム ------------------------------------------------*/
+@media screen and (max-width: 1427px) {
+  /* (~1427px) ------------*/
+  .telbox .left {
+    font-size: 3rem;
+    font-size: calc(23px + (33 - 23) * ((100vw - 1024px) / (1426 - 1024)));
+  }
+  .telbox .right {
+    background-color: white;
+    padding: 25px;
+    width: 50%;
+  }
+  .telbox .right a {
+    font-size: calc(33px + (40 - 33) * ((100vw - 1024px) / (1426 - 1024)));
+  }
+  .telbox .right p:nth-child(1) {
+    border-bottom: 1px solid #000000;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .telbox .right p:nth-child(2) {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .tel .img {
+    display: none;
+  }
+  .telbox {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .telbox .left {
+    /* font-size: 2.5rem; */
+    font-size: calc(22px + (30 - 22) * ((100vw - 600px) / (1024 - 600)));
+  }
+  .telbox .right a {
+    font-size: calc(33px + (40 - 33) * ((100vw - 600px) / (1024 - 600)));
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .telbox .box {
+    display: block;
+  }
+  .box .left {
+    /* font-size: 2rem; */
+    font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (600 - 320)));
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .box .right {
+    width: 100%;
+  }
+  .box .right a {
+    /* font-size: 3rem; */
+    font-size: calc(33px + (40 - 33) * ((100vw - 320px) / (600 - 320)));
+  }
+  .lorem {
+    /* font-size: 12px; */
+    font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (600 - 320)));
+    padding: 20px 10px;
+  }
+}
+
 @media screen and (max-width: 599px) {
   .entryForm form {
     padding: 50px 25px;
