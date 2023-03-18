@@ -152,7 +152,7 @@
           <p>Our company is our workers.</p>
         </div>
         <div class="mv">
-          <video src="/images/top/hero.mp4" muted autoplay loop></video>
+          <video src="/images/top/hero.mp4" muted autoplay loop playsinline></video>
         </div>
       </header>
       <!-- メイン -->
@@ -267,7 +267,7 @@
                         <div class="heading">朝焼け</div>
                         <button
                           class="button"
-                          onclick="location.href='https://www.instagram.com/yuichi.kitahara/?hl=ja'"
+                          onclick="window.open('https://www.instagram.com/yuichi.kitahara/?hl=ja')"
                         >
                           More
                         </button>
@@ -291,7 +291,7 @@
                         <div class="heading">🔥良く燃えた</div>
                         <button
                           class="button"
-                          onclick="location.href='https://www.instagram.com/yuichi.kitahara/?hl=ja'"
+                          onclick="window.open('https://www.instagram.com/yuichi.kitahara/?hl=ja')"
                         >
                           More
                         </button>
@@ -315,7 +315,7 @@
                         <div class="heading">安全祈願に善光寺</div>
                         <button
                           class="button"
-                          onclick="location.href='https://www.instagram.com/yuichi.kitahara/?hl=ja'"
+                          onclick="window.open('https://www.instagram.com/yuichi.kitahara/?hl=ja')"
                         >
                           More
                         </button>
@@ -884,7 +884,7 @@
 
     <script>
       const referrer = document.referrer;
-      const urlList = ["http://kitaharagumi.com/","http://192.168.2.157:5502/company/","http://192.168.2.157:5502/business/","http://192.168.2.157:5502/job-info/"];
+      const urlList = ["http://kitaharagumi.chrono-office.com/","http://kitaharagumi.chrono-office.com/company/","http://kitaharagumi.chrono-office.com/business/","http://kitaharagumi.chrono-office.com/job-info/","http://localhost:5502/","http://localhost:5502/company/","http://localhost:5502/business/","http://localhost:5502/job-info/"];
       const loading = document.querySelector(".loading")
       urlList.forEach(function (url) {
         if (url !== referrer) {
