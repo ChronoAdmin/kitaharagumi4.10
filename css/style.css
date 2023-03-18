@@ -1495,6 +1495,7 @@ SECTION04-----------------------------------------------------------------------
 
 .job-box:hover .content {
   transform: scale(1.05);
+  /* writing-mode: horizontal-tb; */
 }
 
 .job-box:nth-child(1) .content {
@@ -2065,7 +2066,7 @@ footer .text-img {
     font-size: calc(120px + (130 - 120) * ((100vw - 1920px) / (1920 - 1025)));
   }
   #jobinfo .section_line_title::before {
-    font-size: calc(120px + (130 - 120) * ((100vw - 1920px) / (1920 - 1025)));
+    font-size: calc(110px + (130 - 110) * ((100vw - 1920px) / (1920 - 1025)));
   }
   #contact .section_line_title::before {
     font-size: calc(120px + (130 - 120) * ((100vw - 1920px) / (1920 - 1025)));
@@ -2625,6 +2626,13 @@ footer .text-img {
     transform: rotate(0);
   }
 }
+
+/* スマホ------------------------------------ */
+/* @media screen and (max-width: 599px){
+  .job-box .content h2 {
+    writing-mode: vertical-rl;
+  }
+} */
 
 /* お問い合わせ(Top) ------------------------------------------------*/
 
