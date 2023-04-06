@@ -2172,6 +2172,10 @@ footer .text-img {
 
 /* ヘッダーナビ ------------------------------------------------*/
 @media screen and (max-width: 1024px) {
+  #insta_title, #contact, #contact_section {
+    scroll-margin-top: 150px;
+  }
+
   #header-nav {
     border-top: 15px solid #008665;
     grid-template-columns: 1fr;

@@ -51,6 +51,19 @@ window.addEventListener('scroll', function(){
 
 // スワイパー start---------------------------------------------------------------------------------------------------------------------------------------------------------
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//       e.preventDefault();
 
+//       const target = document.querySelector(this.getAttribute('href'));
+//       const headerHeight = 10; // ヘッダーの高さ
 
+//       window.scroll({
+//         top: target.offsetTop - headerHeight,
+//         behavior: 'smooth'
+//       });
+//     });
+//   });
+// });
 
