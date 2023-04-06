@@ -2546,6 +2546,19 @@ footer .text-img {
   .job-boxs {
     display: none;
   }
+  .job-card-1080 a {
+    align-items: center;
+    background: #03d39fa8;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
   .job-card-1080-wrap {
     align-items: center;
     display: flex;
@@ -2573,7 +2586,7 @@ footer .text-img {
     flex: 1;
     height: 100%;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: all 0.5s;
   }
   .job-card-1080 p:hover span {
