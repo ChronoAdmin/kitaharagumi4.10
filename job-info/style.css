@@ -224,6 +224,9 @@ header nav ul li:nth-child(5) a {
   width: 150px;
 }
 
+.card_box p {
+  padding: 10px;
+}
 
 .card_box:nth-child(1) span::before {
   align-items: center;

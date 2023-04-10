@@ -2616,7 +2616,7 @@ footer .text-img {
   }
   .job-card-1080 p span {
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.9rem;
     letter-spacing: 0.1em;
     min-width: 14em;
     padding: 0.5em;
@@ -2624,6 +2624,7 @@ footer .text-img {
     text-transform: uppercase;
     transform: rotate(0deg) !important;
     transition: all 0.5s;
+    letter-spacing: -0.08em;
   }
 
   .job-card-1080 p:hover span {
