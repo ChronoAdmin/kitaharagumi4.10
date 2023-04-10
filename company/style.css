@@ -1053,3 +1053,8 @@ footer .text-img {
     height: 45px;
   }
 }
+
+
+#message, #over-view, #history{
+  scroll-margin-top: 120px;
+}

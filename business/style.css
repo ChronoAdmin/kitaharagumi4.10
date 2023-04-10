@@ -948,3 +948,7 @@ footer .text-img {
     height: 45px;
   }
 }
+
+#works, #register, #work-on{
+  scroll-margin-top: 150px;
+}
