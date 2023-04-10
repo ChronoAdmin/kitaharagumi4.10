@@ -67,3 +67,16 @@ window.addEventListener('scroll', function(){
 //   });
 // });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const hash = window.location.hash;
+  if (hash) {
+    const targetElement = document.querySelector(hash);
+    if (targetElement) {
+      const marginTop = 1500; // Define the margin-top value here.
+      window.scrollTo({
+        top: targetElement.offsetTop - marginTop,
+        behavior: "smooth",
+      });
+    }
+  }
+});

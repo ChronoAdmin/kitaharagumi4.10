@@ -1280,3 +1280,7 @@ footer .text-img {
     height: 45px;
   }
 }
+
+#offer, #voice, #form{
+  scroll-margin-top: 120px;
+}
