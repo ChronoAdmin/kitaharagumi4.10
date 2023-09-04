@@ -152,7 +152,9 @@
                 </div>
               </div>
             </li>
-            <li><a href="https://www.instagram.com/yuichi.kitahara/?hl=ja">SNS</a></li>
+            <li>
+              <a href="https://www.instagram.com/yuichi.kitahara/?hl=ja">SNS</a>
+            </li>
             <li>
               <a href="/#contact_section"
                 ><button type="button">Contact</button></a
@@ -286,7 +288,7 @@
                   <!-- Instagram -->
                   <!-- <p class="sectitle top0_title" id="insta_title">INSTAGRAM</p> -->
                   <!-- <div id="sns_contents"> -->
-                    <!-- <div class="insta_images">
+                  <!-- <div class="insta_images">
                       <div class="insta_card right0">
                         <div class="card-image" id="image1"></div>
                         <div class="category">
@@ -779,7 +781,14 @@
                   </div>
                 </div>
                 <div class="entryForm fade0">
-                  <form action="">
+                  <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input
+                      type="hidden"
+                      name="accessKey"
+                      value="13375b4f-3e87-4bdc-b9b0-bbd532435ed0"
+                    />
+                    <!-- Required -->
+
                     <div class="row">
                       <div class="input-group">
                         <input
@@ -861,6 +870,9 @@
                         >に同意する</label
                       >
                     </div>
+                    <input type="hidden" name="replyTo" value="＜ここを送信先メールアドレスに置き換え＞">
+                    <input type="hidden" name="redirectTo" value="＜ここを遷移先のページのURLに置き換え＞">
+
                     <button type="submit">
                       <i class="fa-solid fa-paper-plane"></i> 確認
                     </button>
@@ -945,8 +957,11 @@
               <li><a href="/job-info/">Job-Info</a></li>
             </ul>
           </div>
-          <a class="instalink" href="https://www.instagram.com/yuichi.kitahara/?hl=ja">
-            <img src="/images/instalogo.webp" alt="インスタボタン">
+          <a
+            class="instalink"
+            href="https://www.instagram.com/yuichi.kitahara/?hl=ja"
+          >
+            <img src="/images/instalogo.webp" alt="インスタボタン" />
           </a>
           <div class="down">
             <img class="logo-img" src="/images/logo.webp" alt="フッターロゴ" />
