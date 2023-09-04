@@ -154,6 +154,13 @@ header nav ul li:nth-child(5) a {
   width: calc(100% - 30%);
 }
 
+
+.w-period {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
 /* 
 入社後のサポート */
 
@@ -420,7 +427,7 @@ header nav ul li:nth-child(5) a {
 
 /* 採用までの流れ------------------------------------------------------------- */
 .flows {
-  background-image: url(../images/haikei-1920x1280-反転.jpg);
+  background-image: url(../images/haikei-1920x1280-反転.webp);
   background-size: cover;
   margin: 150px auto 50px auto;
   padding: 30px;
@@ -960,11 +967,24 @@ footer .center ul li:last-child {
   border-right: none;
 }
 
+.instalink {
+  display: flex;
+  /* justify-content: center; */
+  margin: 50px auto;
+  width: 50px;
+  /* background-color: #fff; */
+}
+
+.instalink img {
+  height: 50px;
+  width: 50px;
+}
+
 footer .down {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 footer .down p {

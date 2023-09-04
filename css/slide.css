@@ -429,14 +429,14 @@
   }
   .example-slider .fnc-slide-1 .fnc-slide__inner,
   .example-slider .fnc-slide-1 .fnc-slide__mask-inner {
-    background-image: url(../images/top/slider.1.jpg);
+    background-image: url(../images/top/slider.1.webp);
     background-color: #000;
     filter: sepia(60%) saturate(200%);
   
   }
   .example-slider .fnc-slide-2 .fnc-slide__inner,
   .example-slider .fnc-slide-2 .fnc-slide__mask-inner {
-    background-image: url(../images/top/slider.2.jpg);
+    background-image: url(../images/top/slider.2.webp);
     background-color: #000;
 
     filter: sepia(60%) saturate(200%);
@@ -444,7 +444,7 @@
   }
   .example-slider .fnc-slide-3 .fnc-slide__inner,
   .example-slider .fnc-slide-3 .fnc-slide__mask-inner {
-    background-image: url(../images/top/slider.3.jpg);
+    background-image: url(../images/top/slider.3.webp);
     background-color: #000;
 
     filter: sepia(60%) saturate(200%);
@@ -461,7 +461,7 @@
   }
   .example-slider .fnc-slide-4 .fnc-slide__inner,
   .example-slider .fnc-slide-4 .fnc-slide__mask-inner {
-    background-image: url(../images/top/slider.4.jpg);
+    background-image: url(../images/top/slider.4.webp);
     background-color: #000;
 
     filter: sepia(60%) saturate(200%);

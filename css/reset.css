@@ -29,27 +29,32 @@ body {
 
 .none {
   opacity: 0;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 a {
   scroll-margin-top: 100px;
 }
 
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
   .none {
     opacity: 1 !important;
-    z-index: 9999; 
+    z-index: 9999;
   }
 }
 
 @media screen and (max-width: 1024px) {
-
   @supports (-webkit-appearance: none) {
     /* ここに、Chrome（およびWebKitベースのブラウザ）に適用したいスタイルを記述します */
-    #message, #over-view, #history, 
-    #works, #register, #work-on, 
-    #offer, #voice, #form {
+    #message,
+    #over-view,
+    #history,
+    #works,
+    #register,
+    #work-on,
+    #offer,
+    #voice,
+    #form {
       padding-top: 150px;
     }
   }
@@ -92,7 +97,6 @@ main {
 /* 
 横向きのヘッダー-------------------------------------------------------------------- */
 
-
 #header-nav {
   border-top: 25px solid #008665;
   position: fixed;
@@ -110,7 +114,7 @@ main {
   box-shadow: 0px 10px 10px #807f7f86;
 }
 
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
   #header-nav {
     z-index: 9999;
   }
@@ -340,7 +344,6 @@ header nav ul li:nth-child(4) a::before {
   position: relative;
   z-index: -2;
   margin-top: 100px;
-
 }
 
 #page_title .page_title_img {
@@ -350,7 +353,7 @@ header nav ul li:nth-child(4) a::before {
   right: 0;
   bottom: 0;
   width: 100%;
-  background-image: url(../images/headerbottom\ \(1\).png);
+  background-image: url(../images/headerbottom.webp);
   background-size: cover;
   background-position: center;
 }
@@ -402,7 +405,7 @@ header nav ul li:nth-child(4) a::before {
   #page_title h1 {
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 4rem;
     width: 100%;
   }
@@ -443,8 +446,19 @@ header nav ul li:nth-child(4) a::before {
 #colnav {
   width: 5%;
   min-width: 100px;
+  width: 5%;
 }
+
+.sidebar {
+  width: 100px;
+  transition: width 0.3s;
+}
+
 #colnav:hover {
+  cursor: pointer;
+}
+
+#colnav:hover .sidebar {
   width: 300px;
 }
 
@@ -455,7 +469,7 @@ header nav ul li:nth-child(4) a::before {
 #colnav .text {
   opacity: 0;
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #colnav:hover .text {
@@ -560,7 +574,7 @@ header nav ul li:nth-child(4) a::before {
 コンテナー------------------------------------------------------------ */
 .container {
   width: 95%;
-  background-image: url(/images/background-image-2.png);
+  background-image: url(/images/background-image-2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -686,7 +700,6 @@ header nav ul li:nth-child(4) a::before {
   background-position: 0% 0.5em;
 }
 
-
 /* ヘッダーナビ ------------------------------------------------*/
 @media screen and (max-width: 1024px) {
   #header-nav {
@@ -774,20 +787,25 @@ header nav ul li:nth-child(4) a::before {
   }
 }
 
-
-@media screen and (max-width: 599px) { 
+@media screen and (max-width: 599px) {
   @supports (-webkit-appearance: none) {
     /* ここに、Chrome（およびWebKitベースのブラウザ）に適用したいスタイルを記述します */
-    #message, #over-view, #history, 
-    #works, #register, #work-on, 
-    #offer, #voice, #form {
+    #message,
+    #over-view,
+    #history,
+    #works,
+    #register,
+    #work-on,
+    #offer,
+    #voice,
+    #form {
       padding-top: 0px;
     }
   }
   .hover-menu {
     display: none;
   }
-  .logo h1{
+  .logo h1 {
     font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (730 - 320)));
   }
   #header-nav ul li {
@@ -806,7 +824,7 @@ header nav ul li:nth-child(4) a::before {
   #header-nav ul {
     margin-left: 0;
     grid-template-columns: repeat(5, auto);
-    margin: 10px 0 0 0 ;
+    margin: 10px 0 0 0;
   }
   #header-nav ul li a {
     font-size: calc(13px + (20 - 13) * ((100vw - 320px) / (730 - 320)));
@@ -836,9 +854,7 @@ header nav ul li:nth-child(4) a::before {
   .header-title {
     top: 45%;
   }
- }
-
-
+}
 
 /* company-menu--------------------------------------------------------- */
 
@@ -857,14 +873,11 @@ header nav ul li:nth-child(4) a::before {
 
 /* スマホ------------------------ */
 @media screen and (max-width: 599px) {
-  
 }
 
-
-
-
 /* エントリーフォーム */
-@media screen and (max-width: 1427px) {/* (~1427px) ------------*/
+@media screen and (max-width: 1427px) {
+  /* (~1427px) ------------*/
   .telbox .left {
     font-size: 3rem;
   }
@@ -884,17 +897,18 @@ header nav ul li:nth-child(4) a::before {
   }
 }
 
-  @media screen and (max-width: 1427px) {/* (~1427px) ------------*/
-    .tel .img {
-      display: none;
-    }
-    .telbox {
-      width: 100%;
-    }
-    .telbox .left {
-      font-size: 3rem;
-    }
+@media screen and (max-width: 1427px) {
+  /* (~1427px) ------------*/
+  .tel .img {
+    display: none;
   }
+  .telbox {
+    width: 100%;
+  }
+  .telbox .left {
+    font-size: 3rem;
+  }
+}
 
 @media screen and (max-width: 599px) {
   .telbox .box {
@@ -908,4 +922,4 @@ header nav ul li:nth-child(4) a::before {
   .box .right {
     width: 100%;
   }
- }
+}

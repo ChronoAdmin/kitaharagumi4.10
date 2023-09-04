@@ -10,7 +10,6 @@
 }
 
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -289,7 +288,7 @@ header nav ul li:nth-child(4) a::before {
 
 /* hero -----------------------------------------------------------------------------------------*/
 header .mv {
-  background: url("../images/追加画像2.17/工事/00000493.JPG") no-repeat;
+  background: url("../images/追加画像2.17/工事/00000493.webp") no-repeat;
   background-position: center center;
   background-size: cover;
   left: 50%;
@@ -310,7 +309,7 @@ header video {
 }
 
 header .mv::before {
-  background-image: url(../images/company-filter.png);
+  background-image: url(../images/company-filter.webp);
   content: "";
   height: 100%;
   left: 0;
@@ -384,7 +383,16 @@ main {
   width: 5%;
 }
 
+.sidebar {
+  width: 100px;
+  transition: width 0.3s;
+}
+
 #colnav:hover {
+  cursor: pointer;
+}
+
+#colnav:hover .sidebar{
   width: 300px;
 }
 
@@ -510,7 +518,7 @@ main {
 }
 
 .bgWrap {
-  background-image: url(../images//background-image-2.png);
+  background-image: url(../images//background-image-2.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -519,7 +527,7 @@ main {
 }
 
 .bgWrapSecond {
-  background-image: url(../images//background-image-2.png);
+  background-image: url(../images//background-image-2.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -528,7 +536,7 @@ main {
 }
 
 /* .bgWrapSecond::before {
-    background-image: url(../images/haike-1920x1280.jpg);
+    background-image: url(../images/haike-1920x1280.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -802,15 +810,15 @@ SECTION01 / NEWS----------------------------------------------------------------
 }
 
 #image1 {
-  background-image: url(../images/top/insta1.jpg);
+  background-image: url(../images/top/insta1.webp);
 }
 
 #image2 {
-  background-image: url(../images/top/insta2.jpg);
+  background-image: url(../images/top/insta2.webp);
 }
 
 #image3 {
-  background-image: url(../images/top/insta3.jpg);
+  background-image: url(../images/top/insta3.webp);
 }
 
 .category {
@@ -1499,13 +1507,13 @@ SECTION04-----------------------------------------------------------------------
 }
 
 .job-box:nth-child(1) .content {
-  background-image: url(../images/job/genba.jpg);
+  background-image: url(../images/job/genba.webp);
 }
 .job-box:nth-child(2) .content {
-  background-image: url(../images/voice.jpg);
+  background-image: url(../images/voice.webp);
 }
 .job-box:nth-child(3) .content {
-  background-image: url(../images/job/zimu.jpg);
+  background-image: url(../images/job/zimu.webp);
 }
 
 .job-box .content h2 {
@@ -1779,7 +1787,7 @@ SECTION05-----------------------------------------------------------------------
   content: "";
   top: 0;
   left: 0;
-  background-image: url(../images/haike-1920x1280.jpg);
+  background-image: url(../images/haike-1920x1280.webp);
   width: 100%;
   height: 100%;
   display: block;
@@ -1962,11 +1970,24 @@ footer .center ul li:last-child {
   border-right: none;
 }
 
+.instalink {
+  display: flex;
+  /* justify-content: center; */
+  margin: 50px auto;
+  width: 50px;
+  /* background-color: #fff; */
+}
+
+.instalink img {
+  height: 50px;
+  width: 50px;
+}
+
 footer .down {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 footer .logo-img {
@@ -2028,7 +2049,7 @@ footer .text-img {
   opacity: 0;
 
   /* display: block;
-  background-image: url(../images/bus/eco1.JPG);
+  background-image: url(../images/bus/eco1.webp);
   background-size: cover;
   background-position: center; */
   pointer-events: none;
@@ -2597,19 +2618,19 @@ footer .text-img {
     font-weight: 800;
   }
   .job-card-1080 p:nth-child(1):hover {
-    background-image: url(../images/job/genba.jpg);
+    /* background-image: url(../images/job/genba.webp); */
     background-position: center;
     background-size: cover;
     flex: 4;
   }
   .job-card-1080 p:nth-child(2):hover {
-    background-image: url(../images/voice.jpg);
+    /* background-image: url(../images/voice.webp); */
     background-position: center;
     background-size: cover;
     flex: 4;
   }
   .job-card-1080 p:nth-child(3):hover {
-    background-image: url(../images/job/zimu.jpg);
+    /* background-image: url(../images/job/zimu.webp); */
     background-position: center;
     background-size: cover;
     flex: 4;

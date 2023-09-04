@@ -182,8 +182,8 @@ header nav ul li:nth-child(5) a {
 
 /* s-slider -----------------------------------------------------------*/
 .s-swipe-wrap {
-  width: 87%;
-  height: 40vw;
+  width: 80%;
+  height: 50vw;
   /* padding-bottom: 100%; */
   position: relative;
   overflow: hidden;
@@ -679,8 +679,21 @@ footer .center ul li:last-child {
   border-right: none;
 }
 
+.instalink {
+  display: flex;
+  /* justify-content: center; */
+  margin: 50px auto;
+  width: 50px;
+  /* background-color: #fff; */
+}
+
+.instalink img {
+  height: 50px;
+  width: 50px;
+}
+
 footer .down {
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
